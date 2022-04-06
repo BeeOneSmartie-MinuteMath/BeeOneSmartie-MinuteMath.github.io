@@ -1,102 +1,22 @@
-import java.util.Scanner;
-class problems
-{
-    void addition1()
-    {
-        for(int count = 1; count <= 10; count++)
+.problems
+{//start class
+        for(let count = 1; count <= 10; count++)
         {
             try (Scanner keyboard = new Scanner(System.in)) 
             {
-                int max = 10;
-                int min = 0;
-                int x = (int)(Math.random() * (max - min + 1) + min);
-                int y = (int)(Math.random() * (max - min + 1) + min);
-                int a = 0;
-                int s = 0;
+                var nmax = 19;
+                var nmin = 5;
+                var x = (int)(Math.random() * (nmax - nmin + 1) + nmin);
 
-            
-                a = x + y;
+                var qmax = 5;
+                var qmin = 1;
+                var y = (int)(Math.random() * (qmax - qmin + 1) + qmin);
 
-                System.out.println("What is: "+x+" + "+y);
-                s = keyboard.nextInt();
-                
-                if (a == s)
-                {
-                    System.out.println("Correct! "+x+" + "+y+" = "+s);
-                }
-                else
-                {
-                    System.out.println("Wrong! "+x+" + "+y+" = "+a);
-                }
-            }
-        }
-    }
-    void subtraction1()
-    {
-        for(int count = 1; count <= 10; count++)
-        {
-            try (Scanner keyboard = new Scanner(System.in)) 
-            {
-                int max = 10;
-                int min = 0;
-                int x = (int)(Math.random() * (max - min + 1) + min);
-                int y = (int)(Math.random() * (max - min + 1) + min);
-                int a = 0;
-                int s = 0;
+                var a = 0;
+                var s = 0;
 
-                if(x > y)
-                {
-                    a = x - y;
-                    System.out.println("What is: "+x+" - "+y);
-                    s = keyboard.nextInt();
-                
-                    if (a == s)
-                    {
-                        System.out.println("Correct! "+x+" - "+y+" = "+s);
-                    }
-                    else
-                    {
-                        System.out.println("Wrong! "+x+" - "+y+" = "+a);
-                    }
-                }
-                if(x < y)
-                    {
-                        a = y - x;
-                        System.out.println("What is: "+y+" - "+x);
-                        s = keyboard.nextInt();
-                
-                    if (a == s)
-                    {
-                        System.out.println("Correct! "+y+" - "+x+" = "+s);
-                    }
-                    else
-                    {
-                        System.out.println("Wrong! "+y+" - "+x+" = "+a);
-                    }
-                }
-                
-            }
-        }
-    }
-    void numberline()
-    {
-        for(int count = 1; count <= 10; count++)
-        {
-            try (Scanner keyboard = new Scanner(System.in)) 
-            {
-                int nmax = 19;
-                int nmin = 5;
-                int x = (int)(Math.random() * (nmax - nmin + 1) + nmin);
-
-                int qmax = 5;
-                int qmin = 1;
-                int y = (int)(Math.random() * (qmax - qmin + 1) + qmin);
-
-                int a = 0;
-                int s = 0;
-
-                int[] nL = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
-                int[] RnL = new int[5];
+                const nL = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+                const RnL = [5];
 
                 RnL[4] = nL[x];
                 for (int countz = 3; countz >= 0; countz--)
@@ -176,12 +96,4 @@ class problems
             }
         }
     }
-}
-public class copypastereplace 
-{
-    public static void main(String[] args) 
-    {
-        problems ace = new problems();
-        ace.numberline();
-    }
-}
+} //end class

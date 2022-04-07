@@ -37,13 +37,13 @@ p {
   font-size: 30px;
   margin: 4px 2px;
   border-radius: 20px;
-  border: solid 3px #EBD701;
+  border: solid 3px #E7D821;
 }
 
 .button:hover {
   transition: all 0.3s ease-in-out;
-  background-color: #F2DD00;
-  border: solid 3px #E7D300;
+  background-color: #D2C529;
+  border: solid 3px #BCAF1C;
 }
 
 .rectangle

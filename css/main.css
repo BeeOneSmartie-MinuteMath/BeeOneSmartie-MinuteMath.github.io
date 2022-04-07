@@ -47,8 +47,8 @@ p {
 
 .rectangle
 {
-  height: 20%;
-  width: 60%;
+  height: 50%;
+  width: 80%;
   background-color: #FFFFFF;
   border: 5px outset black;
   border-radius: 10px;

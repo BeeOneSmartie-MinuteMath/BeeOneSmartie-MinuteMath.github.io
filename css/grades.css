@@ -42,8 +42,8 @@ p {
 
 .button:hover {
   transition: all 0.3s ease-in-out;
-  background-color: #E7D11F;
-  border: solid 3px #D5B611;
+  background-color: #FFED2D;
+  border: solid 3px #E7D300;
 }
 
 .rectangle

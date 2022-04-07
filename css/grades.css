@@ -23,7 +23,7 @@ h1 {
 }
 
 p {
-  color: #3C317E;
+  color: #3B3272;
   font-size: 20px;
   font-weight: 800;
 }
@@ -37,13 +37,13 @@ p {
   font-size: 30px;
   margin: 4px 2px;
   border-radius: 20px;
-  border: solid 3px #E7D821;
+  border: solid 3px #BCAF1C;
 }
 
 .button:hover {
   transition: all 0.3s ease-in-out;
-  background-color: #D2C529;
-  border: solid 3px #BCAF1C;
+  background-color: #B5A607;
+  border: solid 3px #968906;
 }
 
 .rectangle

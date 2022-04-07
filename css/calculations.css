@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #E7D11F;
+  background-color: #FFF47E;
   font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -51,6 +51,6 @@ p {
   height: 60%;
   width: 60%;
   background-color: #FFFFFF;
-  border: 5px outset 00000;
+  border: 5px outset #000000;
   border-radius: 10px;
 }

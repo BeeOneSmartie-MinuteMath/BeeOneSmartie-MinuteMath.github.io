@@ -48,8 +48,8 @@ p {
 
 .rectangle
 {
-  height: 100;
-  width: 1000;
+  height: 60%;
+  width: 60%;
   background-color: #FFFFFF;
   border: 5px outset black;
   border-radius: 10px;

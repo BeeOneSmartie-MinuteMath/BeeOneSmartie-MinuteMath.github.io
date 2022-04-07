@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #fff47e;
+  background-color: #897BD8;
   font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -29,20 +29,20 @@ p {
 
 .button {
   text-align: center;
-  background-color: #6952C9;
-  color: white;
+  background-color: #FFF672;
+  color: black;
   cursor: pointer;
   padding: 50px 100px;
   font-size: 30px;
   margin: 4px 2px;
   border-radius: 20px;
-  border: solid 3px #2e2457;
+  border: solid 3px #E7D11F;
 }
 
 .button:hover {
   transition: all 0.3s ease-in-out;
-  background-color: #2e2457;
-  border: solid 3px #6952C9;
+  background-color: #E7D11F;
+  border: solid 3px #D5B611;
 }
 
 .rectangle

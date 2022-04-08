@@ -53,3 +53,16 @@ p {
   border: 5px outset #000000;
   border-radius: 10px;
 }
+.button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #2e2457;
+  border: solid 3px #6952C9;
+}
+
+.rectangle
+{
+  padding: 20px;
+  background-color: #FFFFFF;
+  border: 5px outset black;
+  border-radius: 10px;
+}

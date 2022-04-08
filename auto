@@ -1,0 +1,28 @@
+.calculations
+{
+  const readline = require("readline");
+            const r1 = readline.createInterface({
+                input: process.stdin,
+                output: process.stdout
+            });
+
+            var x = Math.floor(Math.random() * 11);
+            var y = Math.floor(Math.random() * 11);
+            var correct_answer = 0;
+            var a = 0;
+            var s = 0;
+            a = x;
+            s = y;
+
+            correct_answer = a + s;
+
+            r1.question("What is " + x + " + " + y, function (answer) {
+                console.log("You typed in {answer}");
+                if (answer === correct_answer) {
+                    console.log("You got it right");
+                    r1.close();
+                } else
+                    console.log("You got it wrong");
+                    r1.close();
+            });
+}

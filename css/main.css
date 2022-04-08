@@ -28,7 +28,7 @@ p {
 }
 
 .button {
-  text-align: center;
+  text-align: justify;
   background-color: #6952C9;
   color: white;
   cursor: pointer;
@@ -38,6 +38,7 @@ p {
   border-radius: 20px;
   border: solid 3px #2e2457;
   width: 300px;
+  height: 200px;
 }
 
 .button:hover {

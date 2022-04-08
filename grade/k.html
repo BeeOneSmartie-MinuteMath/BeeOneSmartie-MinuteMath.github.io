@@ -12,9 +12,12 @@
 
   <body>
     <section>
-      <FORM>
-      <INPUT TYPE="Button" VALUE="Previous Page" onClick="history.go(-1)">
-      </FORM>
+      <script>
+        <button id="back">Go Back</button>
+      document.getElementById('go-back').addEventListener('click', () => {
+  history.back();
+});
+      </script>
       <br>
       <br>
       <div class="rectangle">

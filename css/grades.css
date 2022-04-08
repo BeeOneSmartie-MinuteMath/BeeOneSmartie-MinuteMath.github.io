@@ -37,12 +37,12 @@ p {
   font-size: 30px;
   margin: 4px 2px;
   border-radius: 20px;
-  border: solid 3px #EFCE10;
+  border: solid 3px #DABC0E;
 }
 
 .button:hover {
   transition: all 0.3s ease-in-out;
-  background-color: #EFCE10;
+  background-color: #DABC0E;
   border: solid 3px #fbe565;
 }
 

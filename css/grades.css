@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #9552F0;
+  background-color: #5e50b1;
   font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -23,33 +23,33 @@ h1 {
 }
 
 p {
-  color: #3B3272;
+  color: white;
   font-size: 20px;
   font-weight: 800;
 }
 
 .button {
   text-align: center;
-  background-color: #FFF672;
+  background-color: #fbe565;
   color: black;
   cursor: pointer;
   padding: 50px 100px;
   font-size: 30px;
   margin: 4px 2px;
   border-radius: 20px;
-  border: solid 3px #C8BD0F;
+  border: solid 3px #EFCE10;
 }
 
 .button:hover {
   transition: all 0.3s ease-in-out;
-  background-color: #D7CB15;
-  border: solid 3px #FFF672;
+  background-color: #EFCE10;
+  border: solid 3px #fbe565;
 }
 
 .rectangle
 {
   padding: 20px;
   background-color: #FFFFFF;
-  border: 5px outset black;
+  border: 5px outset #5e50b;
   border-radius: 10px;
 }

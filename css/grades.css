@@ -42,7 +42,7 @@ p {
 
 .button:hover {
   transition: all 0.3s ease-in-out;
-  background-color: #DABC0E;
+  background-color: #F2CF00;
   border: solid 3px #fbe565;
 }
 

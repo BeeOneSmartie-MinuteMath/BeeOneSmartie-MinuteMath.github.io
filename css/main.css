@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #fff47e;
+  background-color: #fbe565;
   font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -29,26 +29,26 @@ p {
 
 .button {
   text-align: center;
-  background-color: #6952C9;
+  background-color: #d8d2f6;
   color: white;
   cursor: pointer;
   padding: 50px 100px;
   font-size: 30px;
   margin: 4px 2px;
   border-radius: 20px;
-  border: solid 3px #2e2457;
+  border: solid 3px #5e50b1;
 }
 
 .button:hover {
   transition: all 0.3s ease-in-out;
-  background-color: #2e2457;
-  border: solid 3px #6952C9;
+  background-color: #5e50b1;
+  border: solid 3px #d8d2f6;
 }
 
 .rectangle
 {
   padding: 20px;
   background-color: #FFFFFF;
-  border: 5px outset black;
+  border: 5px outset #5e50b1;
   border-radius: 10px;
 }

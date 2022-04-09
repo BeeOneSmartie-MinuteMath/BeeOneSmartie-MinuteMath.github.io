@@ -50,10 +50,11 @@ p {
 .rectangle
 {
   text-align: center;
-  padding: 20px;
+  height: 15%;
+  width: 60%;
   background-color: #FFFFFF;
   border: 5px outset black;
   border-radius: 10px;
-  width: 1025px;
-  height: 60px;
+  padding: 20px;
+  margin: 40px 0;
 }

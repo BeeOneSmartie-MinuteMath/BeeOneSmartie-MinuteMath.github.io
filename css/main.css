@@ -49,6 +49,7 @@ p {
 
 .rectangle
 {
+  text-align: center;
   padding: 20px;
   background-color: #FFFFFF;
   border: 5px outset black;

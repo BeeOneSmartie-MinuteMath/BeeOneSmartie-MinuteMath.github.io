@@ -55,18 +55,9 @@ p {
   border-radius: 10px;
 }
 
-.backtriangle:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: #F2CF00;
-  border: solid 3px #fbe565;
-}
-
-.backtriangle-left 
+ .centered 
 {
-	width: 0;
-	height: 0;
-	border-top: 25px solid transparent;
-	border-right: 50px solid #555;
-	border-bottom: 25px solid transparent;
-  background-color: #F32929;
-}
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  }

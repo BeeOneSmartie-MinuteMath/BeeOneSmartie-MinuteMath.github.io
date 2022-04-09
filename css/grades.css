@@ -34,11 +34,13 @@ p {
   background-color: #fbe565;
   color: black;
   cursor: pointer;
-  padding: 50px 100px;
+  padding: 20px 70px;
   font-size: 30px;
   margin: 4px 2px;
   border-radius: 20px;
   border: solid 3px #DABC0E;
+  width: 350px;
+  height: 150px;
 }
 
 .button:hover {

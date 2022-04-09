@@ -49,10 +49,13 @@ p {
 
 .rectangle
 {
-  padding: 20px;
+  text-align: center;
+  height: 15%;
+  width: 80%;
   background-color: #FFFFFF;
   border: 5px outset black;
   border-radius: 10px;
+  padding: 20px;
 }
 
  .centered 

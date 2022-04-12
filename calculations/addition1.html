@@ -33,6 +33,7 @@
         </form>
                                            
       </div>
+      <p id="demo"></p>
       <script>
       function myFunction() {
       
@@ -43,7 +44,7 @@
             var a = x + y;
             var r = document.getElementById("quantity").value;
             
-           document.write("Answer = "+a+" Your answer = "+r);
+            document.getElementById("demo").innerHTML = "Answer = "+r;
                                                       
                                                       
                                                       }

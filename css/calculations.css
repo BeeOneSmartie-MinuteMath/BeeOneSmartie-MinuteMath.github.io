@@ -79,6 +79,8 @@ p {
   border-radius: 10px;
   padding: 15px;
   font-size: 15px;
+  bottom: 100;
+  right: 0;
 }
 
 .rectangle3

@@ -81,7 +81,7 @@ p {
   font-size: 20px;
   bottom: 100;
   right: 0;
-  font-family: "Lucida Console";
+  font-family: "Verdana";
   font-weight: bold;
 }
 
@@ -96,7 +96,7 @@ p {
   padding: 15px;
   font-size: 20px;
   float:left;
-  font-family: "Lucida Console";
+  font-family: "Helvetica";
 }
  .centered 
 {

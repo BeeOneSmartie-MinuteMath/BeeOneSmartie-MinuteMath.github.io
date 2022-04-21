@@ -10,7 +10,7 @@
 
   <body>
      <div class="centered">
-      <a href="https://beeonesmartie-minutemath.github.io/grade/grade2">
+      <a href="https://beeonesmartie-minutemath.github.io/grade/grade1">
          <img alt="Qries" src="https://www.freeiconspng.com/uploads/back-undo-return-button-png-13.png"
          width=120" height="55">                 
       </a>
@@ -24,7 +24,36 @@
       <div class="rectangle">
         <h1> Grade 2: Addition </h1>
       </div>
+       <div class="rectangle">
+      
+        <form action="/action_page.php">
+        <label for="quantity">Please type your Answer:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100000">
+        <input type="submit" value="Submit">
+        </form>
+                                           
+      </div>
+     
+                  <br>
+     <div class="rectangle">
+      <script>
+  
+      
+            
+                                           
+            var x = Math.floor(Math.random() * 20);
+            var y = Math.floor(Math.random() * 20);
+            var a = x + y;
+            var r = document.getElementById("quantity").value;
+            
+            document.write("What is the sum of " + y + " + " + x + " ?");
+            document.write("An ="+ a +" YA= " + r);
+                                                      
+                                                      
+      </script>
+      </div>
     </section>
+                                                                   
  
   </body>
 </html>

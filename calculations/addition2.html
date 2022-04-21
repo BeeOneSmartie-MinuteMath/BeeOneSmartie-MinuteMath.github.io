@@ -24,34 +24,25 @@
       <div class="rectangle">
         <h1> Grade 2: Addition </h1>
       </div>
-                            
-     <br>
-     <div class="rectangle">
-      <script>        
+       <div class="rectangle">
+      <script>                                         
             var x = Math.floor(Math.random() * 20);
             var y = Math.floor(Math.random() * 20);
             var a = x + y;
-            var r = document.getElementById("quantity").value;
-            
+            var r = window.prompt("Enter your answer: ");
+                                                                
             document.write("What is the sum of " + y + " + " + x + " ?");
-            document.write("An ="+ a +" YA= " + r);                                               
+            document.write("An ="+ a +" YA= " + r);                                                                                           
       </script>
-      </div>
-                                             
-       <br> 
-       <br>
-       <br>
-       <div class="rectangle">
-        <form action="/action_page.php">
+        <form action="/action_page.php" method="post">
         <label for="quantity">Please type your Answer:</label>
         <input type="number" id="quantity" name="quantity" min="0" max="100000">
         <input type="submit" value="Submit">
-        </form>                                    
-        </div>
-     
-    
+        </form>
+
     </section>
                                                                    
  
   </body>
 </html>
+

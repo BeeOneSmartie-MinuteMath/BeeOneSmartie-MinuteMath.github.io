@@ -22,6 +22,12 @@ h1 {
   text-align: center;
 }
 
+h1 { 
+  color: #5648AA;
+  font-size: 40px;
+  text-align: center;
+}
+
 #beelogo { 
   text-align: left;
 }

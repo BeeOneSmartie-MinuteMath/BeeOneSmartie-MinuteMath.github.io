@@ -53,11 +53,16 @@
           <div class="rectangle2"> 
             <script> 
               
-              var r = document.getElementById("quantity")..innerHTML;   
-                if (r==a)
+              var r = document.getElementById("quantity").value;   
+                if (a==r)
                   {
-                   document.write("An ="+ a +" YA= " + r);                                  
+                   document.write("Good Job! You got the correct answer!");                                  
                   }
+                else 
+                  {
+                    document.write("Wrong answer. The actual answer was" + a);
+                  }
+             
              </script>                                  
            </div>                                    
     </section>

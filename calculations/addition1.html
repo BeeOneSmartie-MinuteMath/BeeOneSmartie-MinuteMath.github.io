@@ -55,15 +55,11 @@
             <script> 
               function ace()
               {
-              var r = document.getElementById("quantity").value;   
-                if (a==r)
-                  {
-                   document.write("Good Job! You got the correct answer!");                                  
-                  }
-                else 
-                  {
+              var r = document.getElementById("quantity").value;  
+                while (a==r) {
+                    ace();
+                             }
                     document.write("Wrong answer. The actual answer was " + a);
-                  }
                }                                                        
              </script>                                  
            </div>                                    

@@ -27,6 +27,16 @@ h1 {
   align-items: right;
   margin: 13px 14px;
   position: absolute;
+  background-color: #6952C9;
+  color: white;
+  cursor: pointer;
+  padding: 20px 70px;
+  font-size: 30px;
+  
+  border-radius: 20px;
+  border: solid 3px #2e2457;
+  width: 350px;
+  height: 150px;
 }
 
 p {

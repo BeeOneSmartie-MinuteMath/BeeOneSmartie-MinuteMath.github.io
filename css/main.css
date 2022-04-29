@@ -24,6 +24,7 @@ h1 {
 
 #beelogo { 
   text-align: left;
+  align-items: left;
   margin: 12px 13px;
 }
 

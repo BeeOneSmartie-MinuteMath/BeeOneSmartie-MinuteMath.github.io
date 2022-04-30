@@ -24,7 +24,43 @@
       <div class="rectangle">
         <h1> Grade 5: Subtraction </h1>
       </div>
+                 
+      <br>
+      <br>
+      <br>
+      <br>
+       <div class="rectangle2">
+      <script>
+            var x = Math.floor(Math.random() * 1000);
+            var y = Math.floor(Math.random() * 1000);
+            if (x > y)
+            {
+              var a = x - y;
+              document.write("Solve: " + x + " - " + y + " ?");
+              document.write("An ="+ a +" YA= " + r);
+            }
+            else
+            {
+              var a = y - x;
+              document.write("Solve: " + y + " - " + x + " ?");
+              document.write("An ="+ a +" YA= " + r);
+            }
+                               
+      </script>
+      </div>                                       
+                              
+      <br>
+      <br>
+        <div class="rectangle3">
+        <form action="/action_page.php" method="post">
+        <label for="quantity">Please type your Answer:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100000">
+        <input type="submit" value="Submit">
+        </form>
+        </div>                                   
+
     </section>
+                                                                   
  
   </body>
 </html>

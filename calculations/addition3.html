@@ -29,47 +29,47 @@
       <br>
       <br>
       <br>                
-      <p id="feedback"></p>                      
-      <div class="rectangle2">          
-      <script> 
-            var x = Math.floor(Math.random() * 30);
-            var y = Math.floor(Math.random() * 30);
-            var a = x + y;
-                                                         
-            document.write("Solve: " + y + " + " + x + " ?");                                     
-      </script>                                   
-      </div>
-        <br>
-       <br> 
-        
-        <div class="rectangle3">
-         <form method="get">
-         <label for="quantity">Please type your Answer:</label>
-         <input type="number" id="quantity" name="quantity" min="0" max="100000" >
-        <button onclick="ace ()">Submit</button>              
-         </form> 
-         
-       </div>
-          <br>                                  
-          <div class="rectangle2"> 
-            for (let count = 0; count < 11; i++)
-            {
-            <script> 
-              function ace()
-              {
-               var r = document.getElementById("quantity").value;   
-                 if (a==r)
-                   {
-                    document.write("Good Job! You got the correct answer!");                                  
-                   }
-                 else 
-                   {
-                     document.write("Wrong answer. The actual answer was " + a);
-                   }
-                }                      
-             </script>  
-             }
-           </div>                                    
+      <p id="feedback"></p>
+      for (let count = 0; count < 11; i++)
+      {
+        <div class="rectangle2"> 
+        <script> 
+              var x = Math.floor(Math.random() * 30);
+              var y = Math.floor(Math.random() * 30);
+              var a = x + y;
+
+              document.write("Solve: " + y + " + " + x + " ?");                                     
+        </script>                                   
+        </div>
+          <br>
+         <br> 
+
+          <div class="rectangle3">
+           <form method="get">
+           <label for="quantity">Please type your Answer:</label>
+           <input type="number" id="quantity" name="quantity" min="0" max="100000" >
+          <button onclick="ace ()">Submit</button>              
+           </form> 
+
+         </div>
+            <br>                                  
+            <div class="rectangle2"> 
+              <script> 
+                function ace()
+                {
+                 var r = document.getElementById("quantity").value;   
+                   if (a==r)
+                     {
+                      document.write("Good Job! You got the correct answer!");                                  
+                     }
+                   else 
+                     {
+                       document.write("Wrong answer. The actual answer was " + a);
+                     }
+                  }                      
+               </script>  
+             </div>
+         }
     </section>
                                                                    
  

@@ -35,7 +35,16 @@
             var y = Math.floor(Math.random() * 10);
             var a = x + y;
                                                          
-            document.write("Solve: " + y + " + " + x + " ?");                                     
+            document.write("Solve: " + y + " + " + x + " ?");
+                                                           
+            if (a==r)
+                   {
+                      document.write("<h1> Good Job! You got the correct Answer! </h1>");                                   
+                   }
+                 else 
+                   {
+                     document.write("Wrong answer. The actual answer was " + a);
+                   }
       </script>                                   
       </div>
         <br>
@@ -49,23 +58,13 @@
              </form> 
         
        </div>
-                                    <script>
-                                    function ace()
-                                              {
-                                               var r = document.getElementById("quantity").value;   
-                                              }    
-                                    </script>
           <br>                                  
           <div class="rectangle2"> 
             <script>   
-              if (a==r)
-                   {
-                      document.write("<h1> Good Job! You got the correct Answer! </h1>");                                   
-                   }
-                 else 
-                   {
-                     document.write("Wrong answer. The actual answer was " + a);
-                   }
+                 function ace()
+                 {
+                  var r = document.getElementById("quantity").value;   
+                 }  
              </script>                                  
            </div>                                    
     </section>

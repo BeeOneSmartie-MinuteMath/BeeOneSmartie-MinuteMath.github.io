@@ -94,14 +94,7 @@
     <html>                                                                      
          <div id="stopwatch">
             00:00:00
-        </div>
-
-        <ul id="buttons">
-            <li><button onclick="startTimer()">Start</button></li>
-            <li><button onclick="stopTimer()">Stop</button></li>
-
-            <li><button onclick="resetTimer()">Reset</button></li>
-        </ul>                                                          
+        </div>                                                       
                                               </html>
        <script>
 const timer = document.getElementById('stopwatch');
@@ -111,18 +104,6 @@ var min = 0;
 var sec = 0;
 var stoptime = false;
 timerCycle();                                              
-
-function startTimer() {
-  if (stoptime == true) {
-        stoptime = false;
-        timerCycle();
-    }
-}
-function stopTimer() {
-  if (stoptime == false) {
-    stoptime = true;
-  }
-}
 
 function timerCycle() {
     if (stoptime == false) {

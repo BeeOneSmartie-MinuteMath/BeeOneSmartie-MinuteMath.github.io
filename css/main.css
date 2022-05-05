@@ -32,7 +32,7 @@ h1 {
 #spin { 
   text-align: right;
   align-items: right;
-  margin: 5px 6px;
+  margin: -5px 6px;
   position: absolute;
 }
 

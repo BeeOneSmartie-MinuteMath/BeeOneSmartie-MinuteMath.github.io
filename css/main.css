@@ -60,7 +60,7 @@ p {
   height: 35%;
   width: 70%;
   background-color: #FFFFFF;
-  border: 5px outset black;
+  border: 10px outset black;
   border-radius: 20px;
   padding: 20px;
 }

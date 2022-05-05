@@ -29,6 +29,13 @@ h1 {
   position: absolute;
 }
 
+#spin { 
+  text-align: right;
+  align-items: right;
+  margin: 3px 4px;
+  position: absolute;
+}
+
 p {
   font-size: 20px;
   font-weight: 800;

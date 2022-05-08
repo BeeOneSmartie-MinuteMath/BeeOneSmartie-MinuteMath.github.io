@@ -34,6 +34,7 @@
             var x = Math.floor(Math.random() * 10);
             var y = Math.floor(Math.random() * 10);
             var a = x + y;
+            var count=0;
                                                          
             document.write("Solve: " + y + " + " + x + " ?");
       </script>                                   
@@ -57,7 +58,8 @@
                   var r = document.getElementById("quantity").value;
                    if (a==r)
                    {
-                     window.alert("<h1>Good Job! You got the correct Answer!</h1>");                                   
+                     window.alert("<h1>Good Job! You got the correct Answer!</h1>");   
+                     count =count+1;
                    }
                    else 
                    {

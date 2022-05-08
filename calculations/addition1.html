@@ -43,7 +43,7 @@
        <br> 
         
         <div class="rectangle3">
-             <form method="get">
+             <form id="form" method="get">
              <label for="quantity">Please type your Answer:</label>
              <input type="number" id="quantity" name="quantity" min="0" max="100000" >
             <button onclick="ace ()">Submit</button>              
@@ -60,6 +60,7 @@
                    {
                      window.alert("<h1>Good Job! You got the correct Answer!</h1>");   
                      count =count+1;
+                     document.getElementById("form").style.visibility = "hidden";
                    }
                    else 
                    {

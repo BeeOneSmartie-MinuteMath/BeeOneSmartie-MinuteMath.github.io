@@ -28,7 +28,8 @@
       <br>
       <br>
       <br>
-      <br>                
+      <br>
+                            <h6 id="question"></h6>                      
       <p id="feedback"></p>                      
       <div class="rectangle2">          
       <script>               
@@ -38,7 +39,7 @@
             var count=0;                                                 
                                           
       </script> 
-          feedback.textContent ="Solve: " + y + " + " + x + " ?"
+          question.textContent ="Solve: " + y + " + " + x + " ?"
       </div>
         <br>
        <br> 
@@ -68,7 +69,7 @@
                              x = Math.floor(Math.random() * 20);
                              y = Math.floor(Math.random() * 20);
                              a = x + y;
-                             feedback.textContent ="Solve: " + y + " + " + x + " ?"                                     
+                             question.textContent ="Solve: " + y + " + " + x + " ?"                                     
                            }                                      
                       }
                    else 

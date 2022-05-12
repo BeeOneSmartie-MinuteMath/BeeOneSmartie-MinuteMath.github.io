@@ -60,10 +60,10 @@
                  var r = document.getElementById("quantity").value;   
                    if (a==r)
                      {
-
-                      stoptime=true;
                       feedback.textContent = "You got it right!"
-                      count=count+1;                                           
+                      count=count+1;  
+                      if (count==10)
+                          stoptime=true;                                      
                      }
                    else 
                      {

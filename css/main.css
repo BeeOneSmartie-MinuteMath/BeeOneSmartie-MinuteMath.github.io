@@ -29,6 +29,13 @@ h1 {
   position: absolute;
 }
 
+#beehive { 
+  text-align: right;
+  align-items: right;
+  margin: 13px 14px;
+  position: absolute;
+}
+
 #spin { 
   text-align: right;
   align-items: right;

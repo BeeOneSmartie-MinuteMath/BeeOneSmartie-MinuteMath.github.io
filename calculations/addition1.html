@@ -45,7 +45,7 @@
         
         <div class="rectangle3">
              <form method="get">
-             <label id="form" for="quantity">Please type your Answer:</label>
+             <label id="quantity" for="quantity">Please type your Answer:</label>
              <input type="number" id="quantity" name="quantity" min="0" max="100000" >
             <button onclick="ace ()">Submit</button>              
              </form> 
@@ -59,9 +59,7 @@
                   var r = document.getElementById("quantity").value;
                    if (a==r)
                    {
-                     window.alert("Good Job! You got the correct Answer!");   
-                     document.getElementById("form").style.visibility = "hidden";
-  
+                     window.alert("Good Job! You got the correct Answer!");     
                    }
                    else 
                    {

@@ -37,7 +37,7 @@
             var a = x + y;
             var count=0;  
            
-            feedback.textContent= "Solve: " + y + " + " + x + " ?"                                               
+            document.write("Solve: " + y + " + " + x + " ?");                                               
                                           
       </script>                                   
       </div>
@@ -61,18 +61,21 @@
                    if (a==r)
                      {
                       feedback.textContent = "You got it right!"
-                      feedback.textContent= "Solve: " + y + " + " + x + " ?"   
                       count=count+1;  
                       if (count==10)
-                          stoptime=true;                                  
-                      }                                          
+                          stoptime=true;
                       else
-                          {            
-                            var x = Math.floor(Math.random() * 20);
-                            var y = Math.floor(Math.random() * 20);
-                            var a = x + y;          
-                            feedback.textContent = "Try again!"                                     
-                          }                                                         
+                          {
+                             x = Math.floor(Math.random() * 20);
+                             y = Math.floor(Math.random() * 20);
+                             a = x + y;
+                             document.write("Solve: " + y + " + " + x + " ?");                                     
+                          }                                      
+                     }
+                   else 
+                     {
+                       feedback.textContent = "Try again!"
+                     }                                                       
                 }                      
              </script>                                  
     </section>

@@ -31,11 +31,14 @@
       <br>                    
       <div class="rectangle2">          
       <script> 
+            if (a == r)
+            {
             var x = Math.floor(Math.random() * 10);
             var y = Math.floor(Math.random() * 10);
             var a = x + y;
             var count=0;
-                                                         
+            }
+            Else
             document.write("Solve: " + y + " + " + x + " ?");
       </script>                                   
       </div>
@@ -58,13 +61,12 @@
                   var r = document.getElementById("quantity").value;
                    if (a==r)
                    {
-                     window.alert("<h1>Good Job! You got the correct Answer!</h1>");   
-                     count =count+1;
+                     window.alert("Good Job! You got the correct Answer!");   
                      document.getElementById("form").style.visibility = "hidden";
                    }
                    else 
                    {
-                     window.alert("Wrong answer. The actual answer was " + a);
+                     window.alert("Wrong answer. Please try again");
                    }
                  } 
              </script>                                  

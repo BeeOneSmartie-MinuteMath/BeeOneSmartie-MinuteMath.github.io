@@ -31,15 +31,13 @@
       <br>                
       <p id="feedback"></p>                      
       <div class="rectangle2">          
-      <script> 
-            while(count==10)
-            {                 
+      <script>               
             var x = Math.floor(Math.random() * 20);
             var y = Math.floor(Math.random() * 20);
             var a = x + y;
             var count=0;                                             
             document.write("Solve: " + y + " + " + x + " ?");  
-            }                                               
+                                                         
       </script>                                   
       </div>
         <br>
@@ -58,19 +56,21 @@
             <script> 
               function ace()
               {
-               var r = document.getElementById("quantity").value;   
-                 if (a==r)
-                   {
-                    
-                    stoptime=true;
-                    timerCycle();
-                    feedback.textContent = "You got it right!"
-                    count=count+1;                                           
-                   }
-                 else 
-                   {
-                     document.write("Wrong answer. The actual answer was " + a);
-                   }
+               while(count==10)
+               {                    
+                 var r = document.getElementById("quantity").value;   
+                   if (a==r)
+                     {
+
+                      stoptime=true;
+                      feedback.textContent = "You got it right!"
+                      count=count+1;                                           
+                     }
+                   else 
+                     {
+                       document.write("Wrong answer. The actual answer was " + a);
+                     }
+                   }                                                         
                 }                      
              </script>                                  
            </div>                                    

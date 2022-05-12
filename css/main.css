@@ -30,8 +30,8 @@ h1 {
 }
 
 #beehive { 
-  text-align: right;
-  align-items: right;
+  text-align: left;
+  align-items: left;
   margin: 13px 14px;
   position: absolute;
 }

@@ -35,9 +35,11 @@
             var x = Math.floor(Math.random() * 20);
             var y = Math.floor(Math.random() * 20);
             var a = x + y;
-            var count=0;                                             
+            var count=0;  
+            while(count<=10)
+            {
             document.write("Solve: " + y + " + " + x + " ?");  
-                                                         
+            }                                            
       </script>                                   
       </div>
         <br>
@@ -55,9 +57,7 @@
           <div class="rectangle2"> 
             <script> 
               function ace()
-              {
-               while(count==10)
-               {                    
+              {                 
                  var r = document.getElementById("quantity").value;   
                    if (a==r)
                      {
@@ -69,8 +69,7 @@
                    else 
                      {
                        document.write("Wrong answer. The actual answer was " + a);
-                     }
-                   }                                                         
+                     }                                                       
                 }                      
              </script>                                  
            </div>                                    

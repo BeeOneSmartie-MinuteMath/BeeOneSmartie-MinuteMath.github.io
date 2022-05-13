@@ -104,3 +104,12 @@ p {
   top: 1%;
   left: 1%;
   }
+.before-show
+ {
+   display: none
+ }
+
+.after-show
+ {
+   display: block
+ }

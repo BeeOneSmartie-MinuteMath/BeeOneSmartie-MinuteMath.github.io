@@ -28,6 +28,13 @@ p {
   font-weight: 800;
 }
 
+#beehive { 
+  text-align: left;
+  align-items: left;
+  margin: 13px 14px;
+  position: absolute;
+}
+
 .button 
 {
   text-align: center;

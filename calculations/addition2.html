@@ -32,7 +32,8 @@
       <h2 id="question"></h2>                      
       <p id="feedback"></p>                      
       <div id="topbox" class="rectangle2">          
-      <script>               
+      <script>
+            document.getElementById("form").style.visibility = "hidden";                              
             var x = Math.floor(Math.random() * 20);
             var y = Math.floor(Math.random() * 20);
             var a = x + y;
@@ -76,7 +77,8 @@
                         feedback.textContent = " "                          
                         document.getElementById("submit").style.visibility = "hidden"; 
                         document.getElementById("label").style.visibility = "hidden";   
-                        document.getElementById("bottombox").style.visibility = "hidden";                                                                       
+                        document.getElementById("bottombox").style.visibility = "hidden";         
+                        document.getElementById("form").style.visibility = "visible";                                                                
                         }                                                            
                     }
                    else 
@@ -86,7 +88,7 @@
               }                      
              </script>                                  
     </section>
-   <form
+   <form id="form"
   action="https://formspree.io/f/xpzbklbp"
   method="POST"
 >

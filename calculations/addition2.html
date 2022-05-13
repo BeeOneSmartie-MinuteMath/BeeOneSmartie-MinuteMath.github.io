@@ -39,7 +39,9 @@
             var a = x + y;
             var count=0;                                                 
             topbox.textContent ="What is the answer to: " + y + " + " + x + "?"          
-              document.getElementById("form").style.visibility = "hidden";                                                                    
+            document.getElementById("formlabel1").style.visibility = "hidden"; 
+            document.getElementById("formlabel1").style.visibility = "hidden"; 
+            document.getElementById("formbutton").style.visibility = "hidden";                                                             
       </script> 
       </div>
         <br>
@@ -78,8 +80,10 @@
                         feedback.textContent = " "                          
                         document.getElementById("submit").style.visibility = "hidden"; 
                         document.getElementById("label").style.visibility = "hidden";   
-                        document.getElementById("bottombox").style.visibility = "hidden";         
-                        document.getElementById("form").style.visibility = "visible";                                                                
+                        document.getElementById("bottombox").style.visibility = "hidden";
+                        document.getElementById("formlabel1").style.visibility = "visible"; 
+                        document.getElementById("formlabel1").style.visibility = "visible"; 
+                        document.getElementById("formbutton").style.visibility = "visible";                                                                  
                         }                                                            
                     }
                    else 
@@ -93,16 +97,16 @@
   action="https://formspree.io/f/xpzbklbp"
   method="POST"
 >
-  <label>
+  <label id=formlabel1>
     Your name:
     <input type="text" name="email">
   </label>
-  <label>
+  <label id=formlabel2>
     Your message:
     <textarea name="message"></textarea>
   </label>
   <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+  <button id=formbutton type="submit">Send</button>
 </form>
                        
     <style>

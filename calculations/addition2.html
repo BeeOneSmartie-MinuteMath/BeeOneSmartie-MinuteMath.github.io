@@ -39,9 +39,9 @@
             var a = x + y;
             var count=0;                                                 
             topbox.textContent ="What is the answer to: " + y + " + " + x + "?"          
-            document.getElementById("form").style.visibility = "hidden"; 
-            document.getElementById("formlabelx").style.visibility = "hidden"; 
-            document.getElementById("formbutton").style.visibility = "hidden";                                                             
+            document.getElementById("whole").style.visibility = "hidden"; 
+            document.getElementById("getname").style.visibility = "hidden"; 
+            document.getElementById("getbutton").style.visibility = "hidden";                                                             
       </script> 
       </div>
         <br>
@@ -81,9 +81,9 @@
                         document.getElementById("submit").style.visibility = "hidden"; 
                         document.getElementById("label").style.visibility = "hidden";   
                         document.getElementById("bottombox").style.visibility = "hidden";
-                        document.getElementById("formlabel").style.visibility = "visible"; 
-                        document.getElementById("formlabelx").style.visibility = "visible"; 
-                        document.getElementById("formbutton").style.visibility = "visible";                                                                  
+                        document.getElementById("whole").style.visibility = "visible"; 
+                        document.getElementById("getname").style.visibility = "visible"; 
+                        document.getElementById("getbutton").style.visibility = "visible";                                                                  
                         }                                                            
                     }
                    else 
@@ -93,16 +93,16 @@
               }                      
              </script>                                  
     </section>
-   <form id="form"
+   <form id="whole"
   action="https://formspree.io/f/xpzbklbp"
   method="POST"
 >
-  <label id="formlabel">
+  <label id="getname">
     Enter your email:
     <input type="text" name="email">
   </label>
   <!-- your other form fields go here -->
-  <button id="formbutton" type="submit">Send</button>
+  <button id="getbutton" type="submit">Send</button>
 </form>
                        
     <style>

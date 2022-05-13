@@ -79,7 +79,8 @@
                         document.getElementById("label").style.visibility = "hidden";   
                         document.getElementById("bottombox").style.visibility = "hidden";
                         document.getElementById("before-show").style.visibility = "visible";  
-                        before-show.style.visibility = "visible"                                                                   
+                        before-show.style.visibility = "visible"                           
+                        document.getElementById("getbutton").className = "after-show";                                        
                         }                                                            
                     }
                    else 
@@ -89,13 +90,13 @@
               }                      
              </script>                                  
     </section>
-   <form id="before-show"
+   <form class="before-show"
   action="https://formspree.io/f/xpzbklbp"
   method="POST"
 >
-  <label id="before-show">
+  <label class="before-show" id="getname">
     Enter your name:
-    <input id="getname" type="text" name="name">
+    <input type="text" name="name">
   </label>
   <!-- your other form fields go here -->
   <button id="getbutton" type="submit">Send</button>

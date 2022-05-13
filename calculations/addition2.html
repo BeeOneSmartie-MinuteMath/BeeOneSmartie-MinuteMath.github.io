@@ -29,8 +29,7 @@
       <br>
       <br>
       <br>
-                            
-      <h2 id="question"></h2>                      
+                            <h6 id="question"></h6>                      
       <p id="feedback"></p>                      
       <div class="rectangle2">          
       <script>               
@@ -38,7 +37,7 @@
             var y = Math.floor(Math.random() * 20);
             var a = x + y;
             var count=0;                                                 
-            question.textContent = "Solve: " + y + " + " + x + " ?"                              
+            question.textContent ="Solve: " + y + " + " + x + " ?"                              
       </script> 
       </div>
         <br>
@@ -60,18 +59,16 @@
                  var r = document.getElementById("quantity").value;   
                    if (a==r)
                      {
-                      count=count+1;                             
+                      feedback.textContent = "You got it right!"
+                      count=count+1;  
                       if (count==10)
-                         {                                  
-                          feedback.textContent = "You got it right!                                 
-                          stoptime=true; 
-                         }
+                          stoptime=true;
                       else
-                          { 
-                             feedback.textContent = "You got it right! How about the next one?"                                   
+                          {
                              x = Math.floor(Math.random() * 20);
                              y = Math.floor(Math.random() * 20);
-                             a = x + y;                                  
+                             a = x + y;
+                             question.textContent ="Solve: " + y + " + " + x + " ?"                                     
                            }                                      
                       }
                    else 

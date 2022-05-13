@@ -47,7 +47,7 @@
          
          <label for="quantity">Please type your Answer:</label>
          <input type="number" id="quantity" name="quantity" min="0" max="100000" >
-        <button onclick="ace ()">Submit</button>              
+        <button id="submit" onclick="ace ()">Submit</button>              
          
          
        </div>
@@ -71,7 +71,8 @@
                       else
                         stoptime=true;
                         question.textContent ="Congrats! You solved 10 questions. Your time is " +hr + ":" + min + ":" + sec
-                        feedback.textContent =" "                                                                                              
+                        feedback.textContent =" "  
+                        document.getElementById("submit").style.visibility = "hidden";                         
                       }
                    else 
                      {

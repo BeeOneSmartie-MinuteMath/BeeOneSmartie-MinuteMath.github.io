@@ -75,9 +75,17 @@
                         feedback.textContent =" "  
                         document.getElementById("submit").style.visibility = "hidden"; 
                         document.getElementById("label").style.visibility = "hidden";   
-                        document.getElementById("quantity").style.visibility = "hidden";  
-                        <httml>                                                               
-                        <form
+                        document.getElementById("quantity").style.visibility = "hidden";                                                                       
+                        }                                                            
+                    }
+                   else 
+                     {
+                       feedback.textContent = "Try again!"
+                     }                                                       
+              }                      
+             </script>                                  
+    </section>
+   <form
   action="https://formspree.io/f/xpzbklbp"
   method="POST"
 >
@@ -91,18 +99,8 @@
   </label>
   <!-- your other form fields go here -->
   <button type="submit">Send</button>
-</form>                                                               
-                       </html>                                                                          
-                        }                                                            
-                    }
-                   else 
-                     {
-                       feedback.textContent = "Try again!"
-                     }                                                       
-              }                      
-             </script>                                  
-    </section>
-   
+</form>
+                       
     <style>
 #stopwatch {
     font-size: 20px;

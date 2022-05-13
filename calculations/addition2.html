@@ -38,10 +38,7 @@
             var y = Math.floor(Math.random() * 20);
             var a = x + y;
             var count=0;                                                 
-            topbox.textContent ="What is the answer to: " + y + " + " + x + "?"          
-            <! --- document.getElementById("whole").style.visibility = "hidden"; --->
-            document.getElementById("getname").style.visibility = "hidden"; 
-            document.getElementById("getbutton").style.visibility = "hidden";                                                             
+            topbox.textContent ="What is the answer to: " + y + " + " + x + "?"                                                                      
       </script> 
       </div>
         <br>
@@ -81,7 +78,7 @@
                         document.getElementById("submit").style.visibility = "hidden"; 
                         document.getElementById("label").style.visibility = "hidden";   
                         document.getElementById("bottombox").style.visibility = "hidden";
-                        <! --- document.getElementById("whole").style.visibility = "visible"; ---> 
+                        document.getElementById("whole").style.visibility = "visible";
                         document.getElementById("getname").style.visibility = "visible"; 
                         document.getElementById("getbutton").style.visibility = "visible";                                                                  
                         }                                                            
@@ -93,11 +90,11 @@
               }                      
              </script>                                  
     </section>
-   <form id="whole"
+   <form id="before-show"
   action="https://formspree.io/f/xpzbklbp"
   method="POST"
 >
-  <label id="getname">
+  <label id="before-show">
     Enter your name:
     <input id="getname" type="text" name="name">
   </label>

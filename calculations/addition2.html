@@ -68,12 +68,13 @@
                              a = x + y;
                              question.textContent ="Solve: " + y + " + " + x + " ?"                                     
                            }                                         
-                      else
+                      else if (count==10)
+                        {                                                           
                         stoptime=true;
                         question.textContent ="Congrats! You solved 10 questions. Your time is " +hr + ":" + min + ":" + sec
                         feedback.textContent =" "  
                         document.getElementById("submit").style.visibility = "hidden";                         
-                      }
+                       }
                    else 
                      {
                        feedback.textContent = "Try again!"

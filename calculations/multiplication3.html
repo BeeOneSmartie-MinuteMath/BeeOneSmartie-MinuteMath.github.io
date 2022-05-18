@@ -32,11 +32,11 @@
       <p id="feedback"></p>  
       <div id="question" class="rectangle2">          
       <script>               
-            var x = Math.floor(Math.random() * 20);
-            var y = Math.floor(Math.random() * 20);
-            var a = x + y;
+            var x = Math.floor(Math.random() * 5);
+            var y = Math.floor(Math.random() * 5);
+            var a = x * y;
             var count=0;                                                 
-            question.textContent ="What is the answer to: " + y + " + " + x + "?"                             
+            question.textContent ="What is the answer to: " + y + " X " + x + "?"       
       </script> 
       </div>
         <br>
@@ -62,10 +62,10 @@
                       count=count+1;  
                       if (count<10)
                           {
-                             x = Math.floor(Math.random() * 20);
-                             y = Math.floor(Math.random() * 20);
-                             a = x + y;
-                             question.textContent ="What is the answer to: " + y + " + " + x + " ?"                                     
+                             x = Math.floor(Math.random() * 5);
+                             y = Math.floor(Math.random() * 5);
+                             a = x * y;
+                             question.textContent ="What is the answer to: " + y + " X " + x + " ?"                                     
                            }                                         
                       else if (count==10)
                         {                                                           

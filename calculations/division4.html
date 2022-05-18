@@ -10,7 +10,7 @@
 
   <body>
      <div class="centered">
-      <a href="https://beeonesmartie-minutemath.github.io/grade/grade4">
+      <a href="https://beeonesmartie-minutemath.github.io/grade/grade2">
          <img alt="Qries" src="https://www.freeiconspng.com/uploads/back-undo-return-button-png-13.png"
          width=120" height="55">                 
       </a>
@@ -24,43 +24,128 @@
       <div class="rectangle">
         <h1> Grade 4: Division </h1>
      </div>
-                 
+                  
       <br>
       <br>
       <br>
-      <br>
-       <div class="rectangle2">
-      <script>
-            var x = Math.floor(Math.random() * 5);
-            var y = Math.floor(Math.random() * 10);
-            if (x > y)
-            {
-              var a = x/y;
-              document.write("Solve: " + x + " ÷ " + y + " ?");
-              document.write("An ="+ a +" YA= " + r);
-            }
-            else
-            {
-              var a = y/x;
-              document.write("Solve: " + y + " ÷ " + x + " ?");
-              document.write("An ="+ a +" YA= " + r);
-            }
-                               
-      </script>
-      </div>                                       
-                              
-      <br>
-      <br>
+      <br>                      
+      <p id="feedback"></p>  
+      <div id="question" class="rectangle2">          
+      <script>               
+            var x = Math.floor(Math.random() * 10);
+            var y = Math.floor(Math.pow(x, (Math.random() * 3));
+            var a = y / x;
+            var count=0;                                                 
+            question.textContent ="What is the answer to: " + y + " / " + x + "?"                             
+      </script> 
+      </div>
+        <br>
+       <br> 
+        
         <div class="rectangle3">
-        <form action="/action_page.php" method="post">
-        <label for="quantity">Please type your Answer:</label>
-        <input type="number" id="quantity" name="quantity" min="0" max="100000">
-        <input type="submit" value="Submit">
-        </form>
-        </div>                                   
-
+         
+         <label id="label" for="quantity">Please type your Answer:</label>
+         <input type="number" id="quantity" name="quantity" min="0" max="100000" >
+        <button id="submit" onclick="ace ()" class="button" >Submit</button>              
+         
+         
+       </div>
+          <br>                                  
+                                 
+            <script> 
+              function ace()
+              {                 
+                 var r = document.getElementById("quantity").value;   
+                   if (a==r)
+                   {
+                      feedback.textContent = "CORRECT"
+                      count=count+1;  
+                      if (count<10)
+                          {
+                             x = Math.floor(Math.random() * 10);
+                             y = Math.floor(Math.pow(x, (Math.random() * 3));
+                             a = y / x;                                              
+                             question.textContent ="What is the answer to: " + y + " / " + x + "?"                                     
+                           }                                         
+                      else if (count==10)
+                        {                                                           
+                        stoptime=true;
+                        question.textContent ="Congrats! You solved 10 questions. Your time is " +hr + ":" + min + ":" + sec +". Please screen shot your results and email them to beeonesmartiemath@gmail.com"
+                        feedback.textContent =" "  
+                        document.getElementById("submit").style.visibility = "hidden"; 
+                        document.getElementById("label").style.visibility = "hidden";   
+                        document.getElementById("quantity").style.visibility = "hidden";                                                                       
+                        }                                                            
+                    }
+                   else 
+                     {
+                       feedback.textContent = "WRONG"
+                     }                                                       
+              }                      
+             </script>                                  
     </section>
-                                                                   
- 
+                       
+    <style>
+#stopwatch {
+    font-size: 20px;
+    color: #fbe565;
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    transform: translate(-50%, -55%);
+}                                                                           </style>                                                                      
+                                                                          
+    <html>                                                                      
+         <div id="stopwatch">
+            00:00:00
+        </div>                                                       
+                                              </html>
+       <script>
+const timer = document.getElementById('stopwatch');
+
+var hr = 0;
+var min = 0;
+var sec = 0;
+var stoptime = false;
+timerCycle();                                              
+
+function timerCycle() {
+    if (stoptime == false) {
+    sec = parseInt(sec);
+    min = parseInt(min);
+    hr = parseInt(hr);
+
+    sec = sec + 1;
+
+    if (sec == 60) {
+      min = min + 1;
+      sec = 0;
+    }
+    if (min == 60) {
+      hr = hr + 1;
+      min = 0;
+      sec = 0;
+    }
+
+    if (sec < 10 || sec == 0) {
+      sec = '0' + sec;
+    }
+    if (min < 10 || min == 0) {
+      min = '0' + min;
+    }
+    if (hr < 10 || hr == 0) {
+      hr = '0' + hr;
+    }
+
+    timer.innerHTML = hr + ':' + min + ':' + sec;
+
+    setTimeout("timerCycle()", 1000);
+  }
+}
+
+function resetTimer() {
+    timer.innerHTML = '00:00:00';
+}
+                             </script>
   </body>
 </html>

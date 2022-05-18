@@ -28,6 +28,14 @@ p {
   font-weight: 800;
 }
 
+.test1 {
+ position: relative;
+}
+
+.test2 {
+ position: absolute;
+}
+
 #beehive { 
   text-align: right;
   align-items: right;

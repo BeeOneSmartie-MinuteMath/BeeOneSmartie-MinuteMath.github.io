@@ -41,7 +41,7 @@ p {
   text-align: left;
   align-items: left;
   margin: 13px 14px;
-  position: relative;
+  position: absolute;
 }
 
 .button 

@@ -24,7 +24,7 @@ h1 {
 
 h2 { 
   color: #0d0c0c;
-  font-size: 30px;
+  font-size: 23px;
   text-align: center;
 }
 
@@ -40,8 +40,8 @@ p {
   background-color: #f32623;
   color: white;
   cursor: pointer;
-  padding: 10px 30px;
-  font-size: 20px;
+  padding: 8px 18px;
+  font-size: 15px;
   margin: 2px 1px;
   border-radius: 5px;
   border: solid 2px #080807;

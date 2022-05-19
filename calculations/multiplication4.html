@@ -62,12 +62,12 @@
                       count=count+1;//set count equal to count + 1
                       if (count<10)//if count is less than 10 
                           {//start if
-                               if (count%2==0)
+                               if (x%2==0)//if the random num is even (will randomize what kind of question user gets
                                {
                                  x = Math.floor(Math.random() * 12); //first num is equal to a random num from 0 to 12
                                  y = Math.floor(Math.random() * 12);//second num is equal to a random num from 0 to 12
                                 }                         
-                               else if (count%2!=0)
+                               else if (x%2!=0)
                                { 
                                  do{                       
                                      x = Math.floor(Math.random() * 12); //first num is equal to a random num from 0 to 20

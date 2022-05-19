@@ -18,7 +18,7 @@ section {
 
 h1 { 
   color: #5648AA;
-  font-size: 55px;
+  font-size: 80px;
   text-align: center;
 }
 
@@ -43,7 +43,8 @@ h1 {
   position: absolute;
 }
 
-p {
+p 
+{
   font-size: 20px;
   font-weight: 800;
 }
@@ -54,7 +55,7 @@ p {
   color: white;
   cursor: pointer;
   padding: 20px 70px;
-  font-size: 25px;
+  font-size: 30px;
   margin: 4px 2px;
   border-radius: 20px;
   border: solid 3px #2e2457;

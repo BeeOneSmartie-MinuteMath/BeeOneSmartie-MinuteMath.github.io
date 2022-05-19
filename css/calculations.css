@@ -52,8 +52,6 @@ p {
   transition: all 0.3s ease-in-out;
   background-color: #E7D11F;
   border: solid 3px #D5B611;
-  color: white;
-  content: "Once you click on this, a timer will begin and you will be presented with 10 questions. To continue, you must answer the question correctly. Good luck!";
 }
 
 .rectangle
@@ -90,7 +88,7 @@ p {
   border: 5px outset black;
   border-radius: 10px;
   padding: 15px;
-  font-size: 26px;
+  font-size: 30px;
   bottom: 100;
   right: 0;
   font-family: "Verdana";

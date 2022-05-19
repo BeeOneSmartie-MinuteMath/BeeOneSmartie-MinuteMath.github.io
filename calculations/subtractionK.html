@@ -70,7 +70,15 @@
                           {//start if
                              x = Math.floor(Math.random() * 5); //first num is equal to a random num from 0 to 5
                              y = Math.floor(Math.random() * 5);//second num is equal to a random num from 0 to 5
-                             answer = x + y;//set answer equal to the sum of first and second num
+                             if (x > y)
+                            {
+                              var answer = x - y;
+                            }
+                            else
+                            {
+                              var answer = y - x
+                            }
+                     
                              question.textContent ="What is the answer to: " + y + " - " + x + " ?" //prints to page                                    
                            }//end if                                         
                       else if (count==10)//if count is equal to 10 (10 questions have been answered correctly) had to had IF

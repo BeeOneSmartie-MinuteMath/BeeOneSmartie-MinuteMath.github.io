@@ -18,7 +18,7 @@ section {
 
 h1 { 
   color: #5648AA;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
 }
 
@@ -54,7 +54,7 @@ p {
   color: white;
   cursor: pointer;
   padding: 20px 70px;
-  font-size: 30px;
+  font-size: 28px;
   margin: 4px 2px;
   border-radius: 20px;
   border: solid 3px #2e2457;

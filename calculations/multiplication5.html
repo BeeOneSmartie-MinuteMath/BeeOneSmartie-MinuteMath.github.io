@@ -25,50 +25,124 @@
         <h1> Grade 5: Multiplication </h1>
       </div>
                   
+      <br> <! --- create breaks in page --->
       <br>
       <br>
-      <br>
-      <br>                
-      <p id="feedback"></p>                      
-      <div class="rectangle2">          
-      <script> 
-            var x = Math.floor(Math.random() * 12);
+      <br>                      
+      <p id="feedback"></p>  <! --- gives p an id to call on --->
+      <div id="question" class="rectangle2">  <! --- creates div with class from css and an id --->        
+      <script> //start javascript code
+            var x = Math.floor(Math.random() * 12);//randomizes the numbers
             var y = Math.floor(Math.random() * 12);
-            var a = x * y;
-                                                         
-            document.write("Solve: " + y + " X " + x + " ?");                                     
-      </script>                                   
-      </div>
-        <br>
+            var answer = x * y;
+            var count=0; //to count amount of answers user gets correct                                                
+            question.textContent ="What is the answer to: " + y + " X " + x + "?"                             
+      </script> <! ---end javascript code --->
+      </div> <! --- end div--->
+        <br> <! --- add page breaks --->
        <br> 
         
-        <div class="rectangle3">
-         <form method="get">
-         <label for="quantity">Please type your Answer:</label>
-         <input type="number" id="quantity" name="quantity" min="0" max="100000" >
-        <button onclick="ace ()">Submit</button>              
-         </form> 
+        <div class="rectangle3"> <! --- create div using class from css --->
          
-       </div>
-          <br>                                  
-          <div class="rectangle2"> 
-            <script> 
-              function ace()
-              {
-               var r = document.getElementById("quantity").value;   
-                 if (a==r)
-                   {
-                    document.write("Good Job! You got the correct answer!");                                  
-                   }
-                 else 
-                   {
-                     document.write("Wrong answer. The actual answer was " + a);
-                   }
-                }                      
-             </script>                                  
-           </div>                                    
+         <label id="label" for="quantity">Please type your Answer:</label> <! --- Creates a label with an id to print text in div --->
+         <input type="number" id="quantity" name="quantity" min="0" max="100000" > <! --- able to get input from user that is a number with the specified restrictions --->
+        <button id="submit" onclick="check ()" class="button" >Submit</button> <! --- creates a button with class from css and calls function check when clicked --->             
+         
+         
+       </div> <! ---  end div--->
+          <br>  <! --- adds page break --->                                
+                                 
+            <script> //starts javascript code
+              function check() //function (method) to check if correct, change the question, and only runs 10 questions
+              {//start method                 
+                 var input = document.getElementById("quantity").value; //sets r to value inputed by user  
+                   if (answer==input)//if the answer if equal to what the user inputs
+                   {//start first if
+                      feedback.textContent = "CORRECT" //print this on page using style p from css
+                      count=count+1;//set count equal to count + 1
+                      if (count<10)//if count is less than 10 
+                          {//start if
+                              x = Math.floor(Math.random() * 10); //first num is equal to a random num from 0 to 12
+                              y = Math.floor(Math.random() * 250);//second num is equal to a random num from 0 to 12
+                              answer = x * y;//set answer equal to the product of first and second num
+                              question.textContent ="What is the answer to: " + y + " X " + x + " ?" //prints to page                          
+                           }//end if                                         
+                      else if (count==10)//if count is equal to 10 (10 questions have been answered correctly) had to had IF
+                        {//start else if                                                           
+                        stoptime=true;
+                        question.textContent ="Congrats! You solved 10 questions. Your time is " +hr + ":" + min + ":" + sec +". Please screen shot this page and email them to beeonesmartiemath@gmail.com"
+                        feedback.textContent =" " //nothing prints for feedback 
+                        document.getElementById("submit").style.visibility = "hidden"; //the submit button is not visible
+                        document.getElementById("label").style.visibility = "hidden";  //the label is not visible 
+                        document.getElementById("quantity").style.visibility = "hidden";  //the element to specify the anser is not visible                                                                     
+                        } //end else if                                                           
+                    }//end first if
+                   else //if answer is wrong
+                     {//start else
+                       feedback.textContent = "WRONG"//print feedback to back as wrong
+                     } //end else                                                      
+              }//ends method                      
+             </script>                                
     </section>
-                                                                   
- 
+                       
+    <style>/* start css code*/
+#stopwatch { /* css code to style for stop watch*/
+    font-size: 20px;
+    color: #fbe565;
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    transform: translate(-50%, -55%);
+}                                                                           </style>                                                                      
+                                                                          
+    <html> 
+     <! --- code for timer was found on the internet--->                                                
+         <div id="stopwatch"><! --- gives stop watch an id--->
+            00:00:00
+        </div>                                                       
+                                              </html>
+       <script>
+const timer = document.getElementById('stopwatch');
+//setting for timer to start at 0 and then begins when method is called
+var hr = 0;
+var min = 0;
+var sec = 0;
+var stoptime = false;
+timerCycle();                                              
+
+function timerCycle() { //method to run the timer
+    if (stoptime == false) {
+    sec = parseInt(sec);
+    min = parseInt(min);
+    hr = parseInt(hr);
+
+    sec = sec + 1;
+
+    if (sec == 60) {
+      min = min + 1;
+      sec = 0;
+    }
+    if (min == 60) {
+      hr = hr + 1;
+      min = 0;
+      sec = 0;
+    }
+
+    if (sec < 10 || sec == 0) {
+      sec = '0' + sec;
+    }
+    if (min < 10 || min == 0) {
+      min = '0' + min;
+    }
+    if (hr < 10 || hr == 0) {
+      hr = '0' + hr;
+    }
+
+    timer.innerHTML = hr + ':' + min + ':' + sec;//prints the timer to page
+
+    setTimeout("timerCycle()", 1000); //will stop when this much time has passed 
+  }
+}
+                             </script>
   </body>
 </html>

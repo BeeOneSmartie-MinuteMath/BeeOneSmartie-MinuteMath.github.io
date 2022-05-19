@@ -59,7 +59,8 @@ p {
   height: 150px;
 }
 
-.button:hover {
+.button:hover 
+{
   transition: all 0.3s ease-in-out;
   background-color: #BBAB4C;
   border: solid 3px #fbe565;

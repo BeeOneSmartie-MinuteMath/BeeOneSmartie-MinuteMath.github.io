@@ -30,8 +30,8 @@
       <p id="feedback"></p>  <! --- gives p an id to call on --->
       <div id="question" class="rectangle2">  <! --- creates div with class from css and an id --->        
       <script> //start javascript code
-            var x = Math.floor(Math.random() * 20);//randomizes the numbers
-            var y = Math.floor(Math.random() * 20);
+            var x = Math.floor(Math.random() * 21);//randomizes the numbers
+            var y = Math.floor(Math.random() * 21);
             var answer = x + y;
             var count=0; //to count amount of answers user gets correct                                                
             question.textContent ="What is the answer to: " + y + " + " + x + "?"                             
@@ -60,8 +60,8 @@
                       count=count+1;//set count equal to count + 1
                       if (count<10)//if count is less than 10 
                           {//start if
-                             x = Math.floor(Math.random() * 20); //first num is equal to a random num from 0 to 20
-                             y = Math.floor(Math.random() * 20);//second num is equal to a random num from 0 to 20
+                             x = Math.floor(Math.random() * 21); //first num is equal to a random num from 0 to 20
+                             y = Math.floor(Math.random() * 21);//second num is equal to a random num from 0 to 20
                              answer = x + y;//set answer equal to the sum of first and second num
                              question.textContent ="What is the answer to: " + y + " + " + x + " ?" //prints to page                                    
                            }//end if                                         

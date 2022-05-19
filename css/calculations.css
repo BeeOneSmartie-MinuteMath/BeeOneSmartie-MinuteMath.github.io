@@ -52,6 +52,8 @@ p {
   transition: all 0.3s ease-in-out;
   background-color: #E7D11F;
   border: solid 3px #D5B611;
+  color: white !important;
+  content: "Once you click on this, a timer will begin and you will be presented with 10 addition questions that add up to a maximum sum of 20. To continue, you must answer the question correctly. Good luck!" !important;
 }
 
 .rectangle

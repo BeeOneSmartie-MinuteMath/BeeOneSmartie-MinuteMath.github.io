@@ -31,10 +31,19 @@
       <br>                      
       <p id="feedback"></p>  
       <div id="question" class="rectangle2">          
-      <script>               
-            var x = (Math.floor(Math.random() * 9))+1;
-            var y = Math.pow(x, Math.floor(Math.random() * 3)+1);
-            var a = y / x;
+      <script>
+            var op = Math.floor(Math.random() * 1
+            if (op == 0)
+            {
+              var x = (Math.floor(Math.random() * 9))+1;
+              var y = Math.pow(x, Math.floor(Math.random() * 3)+1);
+            }
+            if (op == 1)
+            {
+              var x = (Math.floor(Math.random() * 9))+1;
+              var y = x*10;
+            }
+            var a = y / x;                           
             var count=0;                                                 
             question.textContent ="What is the answer to: " + y + " / " + x + "?"                             
       </script> 
@@ -62,8 +71,17 @@
                       count=count+1;  
                       if (count<10)
                           {
-                             x = Math.floor(Math.random() * 9)+1;
-                             y = Math.pow(x, Math.floor(Math.random() * 3)+1);
+                             op = Math.floor(Math.random() * 1
+                             if (op == 0)
+                             {
+                               x = (Math.floor(Math.random() * 9))+1;
+                               y = Math.pow(x, Math.floor(Math.random() * 3)+1);
+                             }
+                             if (op == 1)
+                             {
+                               x = (Math.floor(Math.random() * 9))+1;
+                               y = x*10;
+                             }
                              a = y / x;                                              
                              question.textContent ="What is the answer to: " + y + " / " + x + "?"                                     
                            }                                         

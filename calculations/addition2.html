@@ -32,7 +32,7 @@
       <script> //start javascript code
             var x = Math.floor(Math.random() * 20);
             var y = Math.floor(Math.random() * 20);
-            var a = x + y;
+            var answer = x + y;
             var count=0;                                                 
             question.textContent ="What is the answer to: " + y + " + " + x + "?"                             
       </script> <! ---end javascript code --->
@@ -51,40 +51,40 @@
           <br>  <! --- adds page break --->                                
                                  
             <script> //starts javascript code
-              function check() //function/method to check if correct, change the question, and only runs 10 questions
+              function check() //function (method) to check if correct, change the question, and only runs 10 questions
               {//start method                 
-                 var r = document.getElementById("quantity").value; //sets r to value inputed by user  
-                   if (a==r)
-                   {
-                      feedback.textContent = "CORRECT"
-                      count=count+1;  
-                      if (count<10)
-                          {
-                             x = Math.floor(Math.random() * 20);
-                             y = Math.floor(Math.random() * 20);
-                             a = x + y;
-                             question.textContent ="What is the answer to: " + y + " + " + x + " ?"                                     
-                           }                                         
-                      else if (count==10)
-                        {                                                           
+                 var input = document.getElementById("quantity").value; //sets r to value inputed by user  
+                   if (answer==input)//if the answer if equal to what the user inputs
+                   {//start first if
+                      feedback.textContent = "CORRECT" //print this on page using style p from css
+                      count=count+1;//set count equal to count + 1
+                      if (count<10)//if count is less than 10 
+                          {//start if
+                             x = Math.floor(Math.random() * 20); //first num is equal to a random num from 0 to 20
+                             y = Math.floor(Math.random() * 20);//second num is equal to a random num from 0 to 20
+                             answer = x + y;//set answer equal to the sum of first and second num
+                             question.textContent ="What is the answer to: " + y + " + " + x + " ?" //prints to page                                    
+                           }//end if                                         
+                      else if (count==10)//if count is equal to 10 (10 questions have been answered correctly)
+                        {//start else if                                                           
                         stoptime=true;
                         question.textContent ="Congrats! You solved 10 questions. Your time is " +hr + ":" + min + ":" + sec +". Please screen shot this page and email them to beeonesmartiemath@gmail.com"
-                        feedback.textContent =" "  
-                        document.getElementById("submit").style.visibility = "hidden"; 
-                        document.getElementById("label").style.visibility = "hidden";   
-                        document.getElementById("quantity").style.visibility = "hidden";                                                                       
-                        }                                                            
-                    }
-                   else 
-                     {
-                       feedback.textContent = "WRONG"
-                     }                                                       
-              }                      
-             </script>                                  
-    </section>
+                        feedback.textContent =" " //nothing prints for feedback 
+                        document.getElementById("submit").style.visibility = "hidden"; //the submit button is not visible
+                        document.getElementById("label").style.visibility = "hidden";  //the label is not visible 
+                        document.getElementById("quantity").style.visibility = "hidden";  //the element to specify the anser is not visible                                                                     
+                        } //end else if                                                           
+                    }//end first if
+                   else //if answer is wrong
+                     {//start else
+                       feedback.textContent = "WRONG"//print feedback to back as wrong
+                     } //end else                                                      
+              }//ends method                      
+             </script>  //ends javascript code                                
+    </section>//ends section
                        
-    <style>
-#stopwatch {
+    <style>/* start css code*/
+#stopwatch { /* css code to style for stop watch*/
     font-size: 20px;
     color: #fbe565;
     position: absolute;
@@ -93,21 +93,22 @@
     transform: translate(-50%, -55%);
 }                                                                           </style>                                                                      
                                                                           
-    <html>                                                                      
-         <div id="stopwatch">
+    <html> 
+     <! --- code for timer was found on the internet--->                                                
+         <div id="stopwatch"><! --- gives stop watch an id--->
             00:00:00
         </div>                                                       
                                               </html>
        <script>
 const timer = document.getElementById('stopwatch');
-
+//setting for timer to start at 0 and then begins when method is called
 var hr = 0;
 var min = 0;
 var sec = 0;
 var stoptime = false;
 timerCycle();                                              
 
-function timerCycle() {
+function timerCycle() { //method to run the timer
     if (stoptime == false) {
     sec = parseInt(sec);
     min = parseInt(min);
@@ -135,14 +136,10 @@ function timerCycle() {
       hr = '0' + hr;
     }
 
-    timer.innerHTML = hr + ':' + min + ':' + sec;
+    timer.innerHTML = hr + ':' + min + ':' + sec;//prints the timer to page
 
-    setTimeout("timerCycle()", 1000);
+    setTimeout("timerCycle()", 1000); //will stop when this much time has passed 
   }
-}
-
-function resetTimer() {
-    timer.innerHTML = '00:00:00';
 }
                              </script>
   </body>

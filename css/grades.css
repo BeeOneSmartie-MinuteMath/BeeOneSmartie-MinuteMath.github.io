@@ -86,8 +86,8 @@ p {
 
 #instructionbee 
 { 
-  text-align: left;
+  text-align: center;
   align-items: right;
-  margin: 200px 20px;
-  position: absolute;
+  margin: 100px 100px;
+  position: center;
 }

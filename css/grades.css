@@ -83,3 +83,11 @@ p {
   top: 1%;
   left: 1%;
   }
+
+#instructionbee 
+{ 
+  text-align: left;
+  align-items: right;
+  margin: 100px 100px;
+  position: absolute;
+}

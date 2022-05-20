@@ -88,6 +88,7 @@ p {
 { 
   text-align: center;
   align-items: right;
-  margin: 100px 100px;
-  position: center;
+  left: 20px;
+  margin: 10px 10px;
+  position: relative;
 }

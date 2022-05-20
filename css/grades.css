@@ -97,7 +97,7 @@ body {
   width: 300px;
   background: #fff;
   border-radius: 40px;
-  border: 5px outset black;
+  border: 3px outset black;
   padding: 24px;
   text-align: center;
   color: #000;
@@ -112,6 +112,6 @@ body {
   border-right: 12px solid transparent;
   border-top: 12px solid #fff;
   border-bottom: 20px solid transparent;
-  left: 45px;
-  bottom: -30px;
+  left: 60px;
+  bottom: -60px;
 }

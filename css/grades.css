@@ -95,6 +95,7 @@ body {
   width: 300px;
   background: #fff;
   border-radius: 40px;
+  border: 5px outset black;
   padding: 24px;
   text-align: center;
   color: #000;

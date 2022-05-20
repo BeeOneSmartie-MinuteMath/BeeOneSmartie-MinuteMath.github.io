@@ -33,7 +33,7 @@
       <div id="question" class="rectangle2">  <! --- creates div with class from css and an id --->        
       <script> //start javascript code
             var x = Math.floor(Math.random() * 79)+20;//randomizes the numbers
-            var y = Math.floor(Math.random() * 9);
+            var y = Math.floor(Math.random() * 10);
             var answer = x * y;
             var count=0; //to count amount of answers user gets correct                                                
             question.textContent ="What is the answer to: " + y + " X " + x + "?"                             
@@ -62,8 +62,8 @@
                       count=count+1;//set count equal to count + 1
                       if (count<10)//if count is less than 10 
                           {//start if
-                              x = Math.floor(Math.random() * 10); //first num is equal to a random num from 0 to 12
-                              y = Math.floor(Math.random() * 250);//second num is equal to a random num from 0 to 12
+                              x = Math.floor(Math.random() * 10); //first num is equal to a random num from 0 to 10
+                              y = Math.floor(Math.random() * 79)+20;//second num is equal to a random num from 20 to 99
                               answer = x * y;//set answer equal to the product of first and second num
                               question.textContent ="What is the answer to: " + y + " X " + x + " ?" //prints to page                          
                            }//end if                                         

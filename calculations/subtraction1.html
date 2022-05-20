@@ -35,16 +35,16 @@
             if (x > y)
             {
               var answer = x - y;
-              question.textContent ="What is the answer to: " + x + " - " + y + "?"  
-              var count=0; //to count amount of answers user gets correct                                                                            
+              question.textContent ="What is the answer to: " + x + " - " + y + "?"                                                                              
             }
             else
             {
               var answer = y - x
               question.textContent ="What is the answer to: " + y + " - " + x + "?"  
-              var count=0; //to count amount of answers user gets correct                                                                            
+                                                                                 
             }
-                                                                                    
+            
+            var count=0; //to count amount of answers user gets correct                                                                       
                               
       </script> <! ---end javascript code --->
       </div> <! --- end div--->
@@ -75,12 +75,12 @@
                              y = Math.floor(Math.random() * 20);//second num is equal to a random num from 0 to 20
                             if (x > y)
                             {
-                               var answer = x - y;
+                               answer = x - y;
                                question.textContent ="What is the answer to: " + x + " - " + y + "?"                             
                             }
                             else
                             {
-                              var answer = y - x
+                              answer = y - x
                               question.textContent ="What is the answer to: " + y + " - " + x + "?"                             
                             }                                 
                           }//end if                                         

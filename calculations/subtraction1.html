@@ -32,6 +32,8 @@
       <script> //start javascript code
             var x = Math.floor(Math.random() * 20);//randomizes the numbers
             var y = Math.floor(Math.random() * 20);
+            var correct_answer = 0;                               
+            var incorrect_answer = 0;                               
             if (x > y)
             {
               var answer = x - y;
@@ -69,6 +71,7 @@
                    {//start first if
                       feedback.textContent = "CORRECT" //print this on page using style p from css
                       count=count+1;//set count equal to count + 1
+                      correct_answer = correct_answer + 1;                                   
                       if (count<10)//if count is less than 10 
                           {//start if
                              x = Math.floor(Math.random() * 20); //first num is equal to a random num from 0 to 20
@@ -87,7 +90,7 @@
                       else if (count==10)//if count is equal to 10 (10 questions have been answered correctly) had to had IF
                         {//start else if                                                           
                         stoptime=true;
-                        question.textContent ="Congrats! You solved 10 questions. Your time is " +hr + ":" + min + ":" + sec +". Please screen shot this page and email them to beeonesmartiemath@gmail.com"
+                        question.textContent ="Congrats! You solved 10 questions and have gotten "+correct_answer+" right and "+incorrect+" wrong. Your time is " +hr + ":" + min + ":" + sec +". Please screen shot this page and email them to beeonesmartiemath@gmail.com"
                         feedback.textContent =" " //nothing prints for feedback 
                         document.getElementById("submit").style.visibility = "hidden"; //the submit button is not visible
                         document.getElementById("label").style.visibility = "hidden";  //the label is not visible 
@@ -97,6 +100,31 @@
                    else //if answer is wrong
                      {//start else
                        feedback.textContent = "WRONG"//print feedback to back as wrong
+                       count=count+1;//set count equal to count + 1
+                       incorrect_answer = incorrect_answer + 1;                              
+                      if (count<10)//if count is less than 10 
+                          {//start if
+                             x = Math.floor(Math.random() * 20); //first num is equal to a random num from 0 to 20
+                             y = Math.floor(Math.random() * 20);//second num is equal to a random num from 0 to 20
+                            if (x > y)
+                            {
+                               answer = x - y;
+                               question.textContent ="What is the answer to: " + x + " - " + y + "?"                             
+                            }
+                            else
+                            {
+                              answer = y - x
+                              question.textContent ="What is the answer to: " + y + " - " + x + "?"                             
+                            }                                 
+                          }//end if    
+                      else if (count==10)//if count is equal to 10 (10 questions have been answered correctly) had to had IF
+                        {//start else if                                                           
+                        stoptime=true;
+                        question.textContent ="Congrats! You solved 10 questions and have gotten "+correct_answer+" right and "+incorrect+" wrong. Your time is " +hr + ":" + min + ":" + sec +". Please screen shot this page and email them to beeonesmartiemath@gmail.com"
+                        feedback.textContent =" " //nothing prints for feedback 
+                        document.getElementById("submit").style.visibility = "hidden"; //the submit button is not visible
+                        document.getElementById("label").style.visibility = "hidden";  //the label is not visible 
+                        document.getElementById("quantity").style.visibility = "hidden";  //the element to specify the anser is not visible                                                                                   
                      } //end else                                                      
               }//ends method                      
              </script>                                

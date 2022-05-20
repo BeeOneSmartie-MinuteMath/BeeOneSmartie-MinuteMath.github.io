@@ -62,20 +62,24 @@
                       count=count+1;//set count equal to count + 1
                       if (count<10)//if count is less than 10 
                           {//start if
-                              x = Math.floor(Math.random() * 10); //first num is equal to a random num from 0 to 10
-                              y = Math.floor(Math.random() * 79)+20;//second num is equal to a random num from 20 to 99
-                              answer = x * y;//set answer equal to the product of first and second num
-                              question.textContent ="What is the answer to: " + y + " X " + x + " ?" //prints to page                          
-                           }//end if                                         
-                      else if (count==10)//if count is equal to 10 (10 questions have been answered correctly) had to had IF
-                        {//start else if                                                           
-                        stoptime=true;
-                        question.textContent ="Congrats! You solved 10 questions. Your time is " +hr + ":" + min + ":" + sec +". Please screen shot this page and email them to beeonesmartiemath@gmail.com"
-                        feedback.textContent =" " //nothing prints for feedback 
-                        document.getElementById("submit").style.visibility = "hidden"; //the submit button is not visible
-                        document.getElementById("label").style.visibility = "hidden";  //the label is not visible 
-                        document.getElementById("quantity").style.visibility = "hidden";  //the element to specify the anser is not visible                                                                     
-                        } //end else if                                                           
+                              x = Math.floor(Math.random() * 10); //first num is equal to a random num from 0 to 10                        
+                              if (x%2==0)//if the random num is even (will randomize what kind of question user gets                       
+                                  y = Math.floor(Math.random() * 79)+20;//second num is equal to a random num from 20 to 99
+                              else if (x%2!=0)     
+                                  y = Math.floor(Math.random() * 99)*10;
+                                                      
+                               answer = x * y;//set answer equal to the product of first and second num                      
+                               question.textContent ="What is the answer to: " + y + " X " + x + " ?" //prints to page                                                                      
+                           }//end if                                                     
+                       else if (count==10)//if count is equal to 10 (10 questions have been answered correctly) had to had IF
+                          {//start else if                                                           
+                          stoptime=true;
+                          question.textContent ="Congrats! You solved 10 questions. Your time is " +hr + ":" + min + ":" + sec +". Please screen shot this page and email them to beeonesmartiemath@gmail.com"
+                          feedback.textContent =" " //nothing prints for feedback 
+                          document.getElementById("submit").style.visibility = "hidden"; //the submit button is not visible
+                          document.getElementById("label").style.visibility = "hidden";  //the label is not visible 
+                          document.getElementById("quantity").style.visibility = "hidden";  //the element to specify the anser is not visible                                                                     
+                          } //end else if                                                           
                     }//end first if
                    else //if answer is wrong
                      {//start else

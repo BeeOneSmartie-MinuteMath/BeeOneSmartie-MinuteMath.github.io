@@ -83,13 +83,11 @@ p {
   top: 1%;
   left: 1%;
   }
-
 body {
   background: #368dda;
 }
 
-.bubble 
-{
+.bubble {
   position: relative;
   font-family: sans-serif;
   font-size: 18px;
@@ -97,10 +95,11 @@ body {
   width: 300px;
   background: #fff;
   border-radius: 40px;
-  border: 3px outset black;
   padding: 24px;
   text-align: center;
   color: #000;
+  left: 200px;
+  bottom: -100px;
 }
 
 .bubble-bottom-left:before {

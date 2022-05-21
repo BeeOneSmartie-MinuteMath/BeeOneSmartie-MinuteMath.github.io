@@ -1,66 +1,165 @@
-<html>
-  <head>
-    <meta charset="UTF-8">
+<html> <! --- start html code --->
+  <head> <! --- start the head --->
+    <meta charset="UTF-8"> <! --- To establish proper website layout and properties--->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grade 3: Subtraction</title>
-      <link rel="stylesheet" href="../../../css/calculations.css"> <! --- need to add ../ to access files before this one --->
+    <title>Grade 3: Subtraction</title> <! --- prints title --->
+      <link rel="stylesheet" href="../../../css/calculations.css"> <! --- need to add ../ to access files before this one, imports the css file here --->
 
-  </head>
+  </head> <! --- end the head --->
 
-  <body>
-     <div class="centered">
-      <a href="https://beeonesmartie-minutemath.github.io/grade/grade3">
-         <img alt="Qries" src="https://www.freeiconspng.com/uploads/back-undo-return-button-png-13.png"
-         width=120" height="55">                 
-      </a>
-     </div>   
-    <section>
+  <body> <! --- start body --->
+     <div class="centered"> <! --- div class from css for back button --->
+      <a href="https://beeonesmartie-minutemath.github.io/grade/grade3"> <! --- links to previous page --->
+         <img alt="Qries" src="https://www.freeiconspng.com/uploads/back-undo-return-button-png-13.png" width=120" height="55"> </a> <! --- image picture link and specifies height, ends link for image --->
+     </div>   <! --- ends div to hold image --->
+    <section> <! --- start a new section --->
+      <br> <! --- creates breaks in the page --->
       <br>
       <br>
       <br>
       <br>
-      <br>
-      <div class="rectangle">
-        <h1> Grade 3: Subtraction </h1>
-      </div>
-                 
-      <br>
-      <br>
+      <div class="rectangle"> <! --- start another div, using class from css --->
+        <h1> Grade 3: Subtraction </h1> <! --- prints header --->
+     </div> <! --- ends div --->
+                  
+      <br> <! --- create breaks in page --->
       <br>
       <br>
-       <div class="rectangle2">
-      <script>
-            var x = Math.floor(Math.random() * 30);
-            var y = Math.floor(Math.random() * 30);
+      <br>                      
+      <p id="feedback"></p>  <! --- gives p an id to call on --->
+      <div id="question" class="rectangle2">  <! --- creates div with class from css and an id --->        
+      <script> //start javascript code
+            var x = Math.floor(Math.random() * 1000);//randomizes the numbers
+            var y = Math.floor(Math.random() * 1000);                           
             if (x > y)
             {
-              var a = x - y;
-              document.write("Solve: " + x + " - " + y + " ?");
-              document.write("An ="+ a +" YA= " + r);
+              var answer = x - y;
+              question.textContent ="What is the answer to: " + x + " - " + y + "?"                                                                              
             }
             else
             {
-              var a = y - x;
-              document.write("Solve: " + y + " - " + x + " ?");
-              document.write("An ="+ a +" YA= " + r);
+              var answer = y - x
+              question.textContent ="What is the answer to: " + y + " - " + x + "?"  
+                                                                                 
             }
-                               
-      </script>
-      </div>                                       
+            
+            var count=0; //to count amount of answers user gets correct                                                                       
                               
-      <br>
-      <br>
-        <div class="rectangle3">
-        <form action="/action_page.php" method="post">
-        <label for="quantity">Please type your Answer:</label>
-        <input type="number" id="quantity" name="quantity" min="0" max="100000">
-        <input type="submit" value="Submit">
-        </form>
-        </div>                                   
-
+      </script> <! ---end javascript code --->
+      </div> <! --- end div--->
+        <br> <! --- add page breaks --->
+       <br> 
+        
+        <div class="rectangle3"> <! --- create div using class from css --->
+         
+         <label id="label" for="quantity">Please type your Answer:</label> <! --- Creates a label with an id to print text in div --->
+         <input type="number" id="quantity" name="quantity" min="0" max="100000" > <! --- able to get input from user that is a number with the specified restrictions --->
+        <button id="submit" onclick="check ()" class="button" >Submit</button> <! --- creates a button with class from css and calls function check when clicked --->             
+         
+         
+       </div> <! ---  end div--->
+          <br>  <! --- adds page break --->                                
+                                 
+            <script> //starts javascript code
+              function check() //function (method) to check if correct, change the question, and only runs 10 questions
+              {//start method                 
+                 var input = document.getElementById("quantity").value; //sets r to value inputed by user  
+                   if (answer==input)//if the answer if equal to what the user inputs
+                   {//start first if
+                      feedback.textContent = "CORRECT" //print this on page using style p from css
+                      count=count+1;//set count equal to count + 1                                  
+                      if (count<10)//if count is less than 10 
+                          {//start if
+                             x = Math.floor(Math.random() * 1000); //first num is equal to a random num from 0 to 20
+                             y = Math.floor(Math.random() * 1000);//second num is equal to a random num from 0 to 20
+                            if (x > y)
+                            {
+                               answer = x - y;
+                               question.textContent ="What is the answer to: " + x + " - " + y + "?"                             
+                            }
+                            else
+                            {
+                              answer = y - x
+                              question.textContent ="What is the answer to: " + y + " - " + x + "?"                             
+                            }                                 
+                          }//end if                                         
+                      else if (count==10)//if count is equal to 10 (10 questions have been answered correctly) had to had IF
+                        {//start else if                                                           
+                        stoptime=true;
+                        question.textContent ="Congrats! You solved 10 questions. Your time is " +hr + ":" + min + ":" + sec +". Please screen shot this page and email them to beeonesmartiemath@gmail.com"
+                        feedback.textContent =" " //nothing prints for feedback 
+                        document.getElementById("submit").style.visibility = "hidden"; //the submit button is not visible
+                        document.getElementById("label").style.visibility = "hidden";  //the label is not visible 
+                        document.getElementById("quantity").style.visibility = "hidden";  //the element to specify the anser is not visible                                                                     
+                        } //end else if                                                           
+                    }//end first if
+                   else //if answer is wrong
+                     {//start else
+                       feedback.textContent = "WRONG"//print feedback to back as wrong                                                                            
+                     } //end else                                                      
+              }//ends method                      
+             </script>                                
     </section>
-                                                                   
- 
+                       
+    <style>/* start css code*/
+#stopwatch { /* css code to style for stop watch*/
+    font-size: 20px;
+    color: #fbe565;
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    transform: translate(-50%, -55%);
+}                                                                           </style>                                                                      
+                                                                          
+    <html> 
+     <! --- code for timer was found on the internet--->                                                
+         <div id="stopwatch"><! --- gives stop watch an id--->
+            00:00:00
+        </div>                                                       
+                                              </html>
+       <script>
+const timer = document.getElementById('stopwatch');
+//setting for timer to start at 0 and then begins when method is called
+var hr = 0;
+var min = 0;
+var sec = 0;
+var stoptime = false;
+timerCycle();                                              
+
+function timerCycle() { //method to run the timer
+    if (stoptime == false) {
+    sec = parseInt(sec);
+    min = parseInt(min);
+    hr = parseInt(hr);
+
+    sec = sec + 1;
+
+    if (sec == 60) {
+      min = min + 1;
+      sec = 0;
+    }
+    if (min == 60) {
+      hr = hr + 1;
+      min = 0;
+      sec = 0;
+    }
+
+    if (sec < 10 || sec == 0) {
+      sec = '0' + sec;
+    }
+    if (min < 10 || min == 0) {
+      min = '0' + min;
+    }
+    if (hr < 10 || hr == 0) {
+      hr = '0' + hr;
+    }
+
+    timer.innerHTML = hr + ':' + min + ':' + sec;//prints the timer to page
+
+    setTimeout("timerCycle()", 1000); //will stop when this much time has passed 
+  }
+}
+                             </script>
   </body>
 </html>

@@ -58,8 +58,8 @@ p {
   width: 350px;
   height: 150px;
   position: absolute;
-  left: 100px;
-  top: 150px;
+  left: 200px;
+  top: 20px;
 }
 
 .button:hover 

@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-body {
+body {/*sets the background color of all pages of Calculations to #fbe565, and imports said fonts*/
   background-color: #fbe565;
   font-family: Arial, Helvetica, sans-serif;
 
@@ -16,26 +16,26 @@ section {
   flex-direction: column;
 }
 
-h1 { 
+h1 { /*sets the color of header 1 on all pages of Calculations to #5648AA, and adjusts the location and font size*/
   color: #5648AA;
   font-size: 40px;
   text-align: center;
 }
 
-h2 { 
+h2 { /*sets the color of header 2 on all pages of Calculations to #0d0c0c, and adjusts the location and font size*/
   color: #0d0c0c;
   font-size: 5px;
   text-align: center;
 }
 
-p {
+p {/*sets the color of p on all pages of Calculations to #f70a0a, and adjusts the location and font size*/
   color: #f70a0a;
   font-size: 20px;
   font-weight: 800;
 }
 
 .button 
-{
+{/*sets the color of all buttons on all pages of Calculations to #f32623 and white, and adjusts the location, font size, and border*/
   text-align: center;
   background-color: #f32623;
   color: white;
@@ -48,14 +48,14 @@ p {
 }
 
 .button:hover 
-{
+{/*when you hover over the buttons in all pages of Calculations, they change to a tint darker, to signify you're hovering over*/
   transition: all 0.3s ease-in-out;
   background-color: #E7D11F;
   border: solid 3px #D5B611;
 }
 
 .rectangle
-{
+{/*sets the color of all rectangle on all pages of Calculations to #FFFFFF, and adjusts the location and border*/
   padding: 20px;
   background-color: #FFFFFF;
   border: 5px outset #000000;
@@ -63,14 +63,14 @@ p {
 }
 
 .button:hover 
-{
+{/*when you hover over the buttons in all pages of Calculations, they change to a tint darker, to signify you're hovering over*/
   transition: all 0.3s ease-in-out;
   background-color: #2e2457;
   border: solid 3px #6952C9;
 }
 
 .rectangle
-{
+{/*sets the color of all rectangle on all pages of Calculations to #FFFFFF, and adjusts the location and border, and border color*/
   text-align: center;
   height: 15%;
   width: 70%;
@@ -80,7 +80,7 @@ p {
   padding: 20px;
 }
 .rectangle2
-{
+{/*sets the color of all rectangle2 on all pages of Calculations to #d8d2f6, and adjusts the location and border attributes, and font attributes*/
   text-align: center;
   height: 20%;
   width: 40%;
@@ -96,7 +96,7 @@ p {
 }
 
 .rectangle3
-{
+{/*sets the color of all rectangle3 on all pages of Calculations to #F2D8FF, and adjusts the location and border attributes, and font attributes*/
   text-align: center;
   height: 20%;
   width: 40%;

@@ -1,17 +1,17 @@
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <! --- To establish proper website layout and properties--->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grade 4: Division</title>
+    <title>Grade 4: Division</title> <! --- prints title --->
       <link rel="stylesheet" href="../../../css/calculations.css"> <! --- need to add ../ to access files before this one --->
 
   </head>
 
   <body>
-     <div class="centered">
-      <a href="https://beeonesmartie-minutemath.github.io/grade/grade4">
-         <img alt="Qries" src="https://www.freeiconspng.com/uploads/back-undo-return-button-png-13.png"
+     <div class="centered"> <! --- div class from css for back button --->
+      <a href="https://beeonesmartie-minutemath.github.io/grade/grade4"> <! --- links to previous page --->
+         <img alt="Qries" src="https://www.freeiconspng.com/uploads/back-undo-return-button-png-13.png" <! --- image picture link and specifies height, ends link for image --->
          width=120" height="55">                 
       </a>
      </div>   
@@ -22,22 +22,20 @@
       <br>
       <br>
       <div class="rectangle">
-        <h1> Grade 4: Division </h1>
+        <h1> Grade 4: Division </h1> <! --- prints header --->
      </div>
                   
       <br>
       <br>
       <br>
       <br>                      
-      <p id="feedback"></p>  
-      <div id="question" class="rectangle2">          
+      <p id="feedback"></p>  <! --- gives p an id to call on --->
+      <div id="question" class="rectangle2">  <! --- creates div with class from css and an id --->    
       <script>
-            
-              var x = (Math.floor(Math.random() * 9))+1;
-              var y = x*(Math.floor(Math.random() * 9)+1);
-            
-            var a = y / x;                           
-            var count=0;                                                 
+            var x = (Math.floor(Math.random() * 9))+1;//random numbers
+            var y = x*(Math.floor(Math.random() * 9)+1);
+            var a = y / x;
+            var count=0;//counts # of correct answers                                               
             question.textContent ="What is the answer to: " + y + " / " + x + "?"                             
       </script> 
       </div>
@@ -57,9 +55,9 @@
             <script> 
               function ace()
               {                 
-                 var r = document.getElementById("quantity").value;   
+                 var r = document.getElementById("quantity").value;//answer input variable
                    if (a==r)
-                   {
+                   {//if answer == answer input, display correct, add one to the count, and if the count is still less than 10 generate a new question, otherwise congratulate them
                       feedback.textContent = "CORRECT"
                       count=count+1;  
                       if (count<10)
@@ -82,7 +80,7 @@
                         }                                                            
                     }
                    else 
-                     {
+                     {//if answer doesn't == answer input, display wrong, with the same question remaining for them to eventually solve
                        feedback.textContent = "WRONG"
                      }                                                       
               }                      
@@ -99,21 +97,21 @@
     transform: translate(-50%, -55%);
 }                                                                           </style>                                                                      
                                                                           
-    <html>                                                                      
+    <html>      <! --- code for timer was found on the internet--->                                                                   
          <div id="stopwatch">
             00:00:00
         </div>                                                       
                                               </html>
        <script>
 const timer = document.getElementById('stopwatch');
-
+//setting for timer to start at 0 and then begins when method is called
 var hr = 0;
 var min = 0;
 var sec = 0;
 var stoptime = false;
 timerCycle();                                              
 
-function timerCycle() {
+function timerCycle() {//method to run the timer
     if (stoptime == false) {
     sec = parseInt(sec);
     min = parseInt(min);
@@ -141,9 +139,9 @@ function timerCycle() {
       hr = '0' + hr;
     }
 
-    timer.innerHTML = hr + ':' + min + ':' + sec;
+    timer.innerHTML = hr + ':' + min + ':' + sec;//prints the timer to page
 
-    setTimeout("timerCycle()", 1000);
+    setTimeout("timerCycle()", 1000);//will stop when this much time has passed 
   }
 }
 

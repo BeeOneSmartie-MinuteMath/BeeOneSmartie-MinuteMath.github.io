@@ -57,9 +57,6 @@ p {
   border: solid 3px #DABC0E;
   width: 350px;
   height: 150px;
-  position: absolute;
-  left: 200px;
-  top: 20px;
 }
 
 .button:hover 

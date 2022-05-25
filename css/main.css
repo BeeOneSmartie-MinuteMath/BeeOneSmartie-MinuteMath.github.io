@@ -3,40 +3,40 @@
   padding: 0;
 }
 
-body {
+body {/*sets the background color of all pages of Calculations to #fbe565, and imports said fonts*/
   background-color: #fbe565;
   font-family: Arial, Helvetica, sans-serif;
 
 }
 
-section {
+section {/*sets attributes for eac section*/
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-h1 { 
+h1 { /*sets the color of header 1 on all pages of Calculations to #5648AA, and adjusts the location and font size*/
   color: #5648AA;
   font-size: 50px;
   text-align: center;
 }
 
-#beelogo { 
+#beelogo { /*setting position of logo*/
   text-align: right;
   align-items: right;
   margin: 13px 14px;
   position: absolute;
 }
 
-#beehive { 
+#beehive { /*setting position of bee hive image*/
   text-align: left;
   align-items: left;
   margin: 13px 14px;
   position: absolute;
 }
 
-#spin { 
+#spin { /*for the click me animation-sets position*/
   text-align: right;
   align-items: right;
   margin: -112px -116px;
@@ -44,12 +44,12 @@ h1 {
 }
 
 p 
-{
+{/*sets the color of p on all pages of Calculations to #f70a0a, and adjusts the location and font size*/
   font-size: 20px;
   font-weight: 800;
 }
 
-.button {
+.button {/*sets the color of all buttons on all pages of Calculations to #f32623 and white, and adjusts the location, font size, and border*/
   text-align: center;
   background-color: #6952C9;
   color: white;
@@ -63,14 +63,14 @@ p
   height: 150px;
 }
 
-.button:hover {
+.button:hover {/*when you hover over the buttons in all pages of Calculations, they change to a tint darker, to signify you're hovering over*/
   transition: all 0.3s ease-in-out;
   background-color: #2e2457;
   border: solid 3px #6952C9;
 }
 
 .rectangle
-{
+{/*sets the color of all rectangle on all pages of Calculations to #FFFFFF, and adjusts the location and border(div class)*/
   text-align: center;
   height: 15%;
   width: 70%;

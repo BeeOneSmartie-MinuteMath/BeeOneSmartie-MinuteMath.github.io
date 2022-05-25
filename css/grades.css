@@ -46,8 +46,8 @@ p {/*sets the color of p on all pages of Calculations to #f70a0a, and adjusts th
 
 #bigbee { /*setting position of bigbee image*/
   text-align: right;
-  align-items: right;
-  margin: 13px 500px;
+  align-items: center;
+  margin: 13px 50px;
   position: relative;
 }
 
@@ -109,7 +109,7 @@ body {/*set background colour*/
   text-align: center;
   color: #000;
   right: -100px;
-  bottom: -1px;
+  bottom: -20px;
 }
 
 .bubble-bottom-left:before {/*sets attributes for triangle attached to speech bubble*/

@@ -3,41 +3,41 @@
   padding: 0;
 }
 
-body {
+body {/*sets the background color of all pages of Calculations to #fbe565, and imports said fonts*/
   background-color: #5e50b1;
   font-family: Arial, Helvetica, sans-serif;
 
 }
 
-section {
+section {/*sets attributes for eac section*/
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-h1 { 
+h1 { /*sets the color of header 1 on all pages of Calculations to #5648AA, and adjusts the location and font size*/
   color: #5648AA;
   font-size: 40px;
   text-align: center;
 }
 
-p {
+p {/*sets the color of p on all pages of Calculations to #f70a0a, and adjusts the location and font size*/
   color: white;
   font-size: 20px;
   font-weight: 800;
 }
 
-.bee1 {
+.bee1 {/*setting position of bee image*/
  position: relative;
 }
 
-.bee2 {
+.bee2 {/*setting position of bee image*/
  position: absolute;
  right:10px;
 }
 
-#beehive { 
+#beehive { /*setting position of bee hive image*/
   text-align: left;
   align-items: left;
   margin: 13px 14px;
@@ -45,7 +45,7 @@ p {
 }
 
 .button 
-{
+{/*sets the color of all buttons on all pages of Calculations to #f32623 and white, and adjusts the location, font size, and border*/
   text-align: center;
   background-color: #fbe565;
   color: black;
@@ -60,14 +60,14 @@ p {
 }
 
 .button:hover 
-{
+{/*when you hover over the buttons in all pages of Calculations, they change to a tint darker, to signify you're hovering over*/
   transition: all 0.3s ease-in-out;
   background-color: #BBAB4C;
   border: solid 3px #fbe565;
 }
 
 .rectangle
-{
+{/*sets the color of all rectangle on all pages of Calculations to #FFFFFF, and adjusts the location and border(div class)*/
   text-align: center;
   height: 15%;
   width: 70%;
@@ -83,11 +83,12 @@ p {
   top: 1%;
   left: 1%;
   }
-body {
+
+body {/*set background colour*/
   background: #368dda;
 }
 
-.bubble {
+.bubble {/*sets attributes for speech bubble*/
   position: relative;
   font-family: sans-serif;
   font-size: 15px;
@@ -103,7 +104,7 @@ body {
   bottom: -100px;
 }
 
-.bubble-bottom-left:before {
+.bubble-bottom-left:before {/*sets attributes for triangle attached to speech bubble*/
   content: "";
   width: 0px;
   height: 0px;

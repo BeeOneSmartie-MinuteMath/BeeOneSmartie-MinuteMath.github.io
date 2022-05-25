@@ -108,8 +108,8 @@ body {/*set background colour*/
   padding: 15px;
   text-align: center;
   color: #000;
-  right: 450px;
-  bottom: -120px;
+  right: 550px;
+  bottom: 120px;
 }
 
 .bubble-bottom-left:before {/*sets attributes for triangle attached to speech bubble*/

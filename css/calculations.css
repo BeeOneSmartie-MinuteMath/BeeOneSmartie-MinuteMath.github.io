@@ -9,7 +9,7 @@ body {/*sets the background color of all pages of Calculations to #fbe565, and i
 
 }
 
-section {
+section {/*sets attributes for eac section*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@ p {/*sets the color of p on all pages of Calculations to #f70a0a, and adjusts th
 }
 
 .rectangle
-{/*sets the color of all rectangle on all pages of Calculations to #FFFFFF, and adjusts the location and border, and border color*/
+{/*sets the color of all rectangle on all pages of Calculations to #FFFFFF, and adjusts the location and border, and border color(div)*/
   text-align: center;
   height: 15%;
   width: 70%;

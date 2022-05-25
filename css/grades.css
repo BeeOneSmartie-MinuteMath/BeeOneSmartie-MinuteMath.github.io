@@ -44,6 +44,13 @@ p {/*sets the color of p on all pages of Calculations to #f70a0a, and adjusts th
   position: absolute;
 }
 
+#bigbee { /*setting position of bigbee image*/
+  text-align: right;
+  align-items: right;
+  margin: 13px 14px;
+  position: absolute;
+}
+
 .button 
 {/*sets the color of all buttons on all pages of Calculations to #f32623 and white, and adjusts the location, font size, and border*/
   text-align: center;
@@ -89,7 +96,7 @@ body {/*set background colour*/
 }
 
 .bubble {/*sets attributes for speech bubble*/
-  position: relative;
+  position: absolute;
   font-family: sans-serif;
   font-size: 15px;
   line-height: 20px;

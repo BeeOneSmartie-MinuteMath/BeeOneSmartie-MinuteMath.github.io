@@ -28,6 +28,10 @@ p {/*sets the color of p on all pages of Calculations to #f70a0a, and adjusts th
   font-weight: 800;
 }
 
+p.a { /*sets content of p.a to invisible also test so might delete*/
+  visibility: hidden;
+}
+
 .bee1 {/*setting position of bee image*/
  position: relative;
 }

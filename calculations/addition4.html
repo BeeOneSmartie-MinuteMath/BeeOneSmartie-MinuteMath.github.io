@@ -59,7 +59,7 @@
                   event.preventDefault();
                   document.getElementById("submit").click();
                 }
-              })
+              });
               function check() //function (method) to check if correct, change the question, and only runs 10 questions
               {//start method                 
                  var input = document.getElementById("quantity").value; //sets r to value inputed by user  
@@ -72,9 +72,7 @@
                              x = Math.floor(Math.random() * 29)+21;
                              y = Math.floor(Math.random() * 49)+50;
                              answer = x + y;//set answer equal to the sum of first and second num
-                             question.textContent ="What is the answer to: " + y + " + " + x + " ?" //prints to page     
-                            const input = document.getElementById("quantity");
-                            input.value=null;
+                             question.textContent ="What is the answer to: " + y + " + " + x + " ?" //prints to page 
                            }//end if                                         
                       else if (count==10)//if count is equal to 10 (10 questions have been answered correctly) had to had IF
                         {//start else if                                                           

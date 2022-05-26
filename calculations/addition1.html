@@ -53,11 +53,11 @@
                                  
             <script> //starts javascript code
             document.getElementById("quantity")                                               
-              input.addEventListener("keypress", function(e) 
+              input.addEventListener("keypress", function(event) 
               {
-                if (e.code === "Enter") 
+                if (event.code === "Enter") 
                 {
-                  e.preventDefault()                   
+                  event.preventDefault()                   
                   document.getElementById("submit").click();
                   submit.value = '';                                
                 }

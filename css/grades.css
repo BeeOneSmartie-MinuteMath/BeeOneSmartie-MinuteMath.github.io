@@ -44,17 +44,10 @@ p {/*sets the color of p on all pages of Calculations to #f70a0a, and adjusts th
   position: absolute;
 }
 
-#bigbee1 { /*setting position of bigbee image for Grades K, 1, 2*/
+#bigbee { /*setting position of bigbee image*/
   text-align: left;
   align-items: left;
   margin: 140px -120px;
-  position: relative;
-}
-
-#bigbee2 { /*setting position of bigbee image for Grades 3, 4, 5*/
-  text-align: left;
-  align-items: left;
-  margin: -140px -120px;
   position: relative;
 }
 

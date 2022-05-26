@@ -36,7 +36,15 @@
             var y = Math.floor(Math.random() * 49)+50;
             var answer = x + y;
             var count=0; //to count amount of answers user gets correct                                                
-            question.textContent ="What is the answer to: " + y + " + " + x + "?"                             
+            question.textContent ="What is the answer to: " + y + " + " + x + "?"   
+            
+              var inputval = document.getElementById("quantity");
+              inputval.addEventListener("keypress", function(event) {
+                if (event.key === "Enter") {
+                  event.preventDefault();
+                  document.getElementById("submit").click();
+                }
+              });                                                                     
       </script> <! ---end javascript code --->
       </div> <! --- end div--->
         <br> <! --- add page breaks --->
@@ -53,13 +61,6 @@
           <br>  <! --- adds page break --->                                
                                  
             <script> //starts javascript code
-              var inputval = document.getElementById("quantity");
-              inputval.addEventListener("keypress", function(event) {
-                if (event.key === "Enter") {
-                  event.preventDefault();
-                  document.getElementById("submit").click();
-                }
-              });
               function check() //function (method) to check if correct, change the question, and only runs 10 questions
               {//start method                 
                  var input = document.getElementById("quantity").value; //sets r to value inputed by user  

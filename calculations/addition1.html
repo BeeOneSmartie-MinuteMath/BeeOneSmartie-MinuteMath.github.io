@@ -47,7 +47,10 @@
          <input type="number" id="quantity" name="quantity" min="0" max="100000" > <! --- able to get input from user that is a number with the specified restrictions --->
          <button id="submit" onclick="check ()" class="button" >Submit</button> <! --- creates a button with class from css and calls function check when clicked --->
          <script> //starts javascript code
-              var input = document.getElementById("quantity");                                                                                           
+            
+             function check() //function (method) to check if correct, change the question, and only runs 10 questions
+              {//start method  
+               var input = document.getElementById("quantity");                                                                                           
               input.addEventListener("keypress", function(event) 
               {
                 if (event.key === "Enter") 
@@ -55,9 +58,8 @@
                   event.preventDefault()                   
                   document.getElementById("submit").click();                                 
                 }
-              });
-                     
-             if (answer==input)//if the answer if equal to what the user inputs
+              });                                                
+              if (answer==input)//if the answer if equal to what the user inputs
                 {//start first if
                    input.value = '';                                          
                    feedback.textContent = "CORRECT" //print this on page using style p from css
@@ -83,7 +85,8 @@
                      {//start else
                        input.value = '';                                                                 
                        feedback.textContent = "WRONG"//print feedback to back as wrong
-                     } //end else                                                                                                            
+                     } //end else   
+                 }//ends method                                       
           </script>                                        
          
          

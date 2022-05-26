@@ -31,14 +31,6 @@
       <div id="question" class="rectangle2">  <! --- creates div with class from css and an id --->        
       <script> 
       //start javascript code
-      input.addEventListener("keypress", function(event) 
-      {
-        if (event.key === "Enter") 
-        {
-          event.preventDefault();
-          document.getElementById("submit").click();
-        }
-      }
             var x = Math.floor(Math.random() * 11);//randomizes the numbers
             var y = Math.floor(Math.random() * 11);
             var answer = x + y;
@@ -60,6 +52,14 @@
           <br>  <! --- adds page break --->                                
                                  
             <script> //starts javascript code
+              input.addEventListener("keypress", function(event) 
+      {
+        if (event.key === "Enter") 
+        {
+          event.preventDefault();
+          document.getElementById("submit").click();
+        }
+      }                                                 
               function check() //function (method) to check if correct, change the question, and only runs 10 questions
               {//start method                 
                  var input = document.getElementById("quantity").value; //sets r to value inputed by user  

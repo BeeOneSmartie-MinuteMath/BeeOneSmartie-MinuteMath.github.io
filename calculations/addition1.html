@@ -53,8 +53,7 @@
                 if (event.key === "Enter") 
                 {
                   event.preventDefault()                   
-                  document.getElementById("submit").click();
-                  submit.value = '';                                
+                  document.getElementById("submit").click();                             
                 }
               });       
           </script>                                        
@@ -70,7 +69,7 @@
                  var input = document.getElementById("quantity").value; //sets r to value inputed by user  
                    if (answer==input)//if the answer if equal to what the user inputs
                    {//start first if
-                      submit.value = '';                                          
+                      input.value = '';                                          
                       feedback.textContent = "CORRECT" //print this on page using style p from css
                       count=count+1;//set count equal to count + 1
                       if (count<10)//if count is less than 10 
@@ -92,7 +91,7 @@
                     }//end first if
                    else //if answer is wrong
                      {//start else
-                       submit.value = '';                                                                 
+                       input.value = '';                                                                 
                        feedback.textContent = "WRONG"//print feedback to back as wrong
                      } //end else                                                      
               }//ends method                      

@@ -53,14 +53,6 @@
           <br>  <! --- adds page break --->                                
                                  
             <script> //starts javascript code
-              const elem = document.getElementById("quantity");
-
-                elem.addEventListener("keypress", (event)=> {
-                    if (event.keyCode === 13) { // key code of the keybord key
-                      event.preventDefault();
-                      check();
-                    }
-                  });
               function check() //function (method) to check if correct, change the question, and only runs 10 questions
               {//start method                 
                  var input = document.getElementById("quantity").value; //sets r to value inputed by user  

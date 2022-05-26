@@ -52,10 +52,10 @@
           <br>  <! --- adds page break --->                                
                                  
             <script> //starts javascript code
-            document.getElementById("quantity")                                               
+              var input = document.getElementById("quantity");                                                                                           
               input.addEventListener("keypress", function(event) 
               {
-                if (event.code === "Enter") 
+                if (event.key === "Enter") 
                 {
                   event.preventDefault()                   
                   document.getElementById("submit").click();

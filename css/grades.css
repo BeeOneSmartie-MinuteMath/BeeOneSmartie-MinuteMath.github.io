@@ -28,10 +28,6 @@ p {/*sets the color of p on all pages of Calculations to #f70a0a, and adjusts th
   font-weight: 800;
 }
 
-p.a { /*sets content of p.a to invisible also test so might delete*/
-  visibility: hidden;
-}
-
 .bee1 {/*setting position of bee image*/
  position: relative;
 }
@@ -48,7 +44,14 @@ p.a { /*sets content of p.a to invisible also test so might delete*/
   position: absolute;
 }
 
-#bigbee { /*setting position of bigbee image*/
+#bigbee1 { /*setting position of bigbee image for Grades K, 1, 2*/
+  text-align: left;
+  align-items: left;
+  margin: 140px -120px;
+  position: relative;
+}
+
+#bigbee2 { /*setting position of bigbee image for Grades 3, 4, 5*/
   text-align: left;
   align-items: left;
   margin: -140px -120px;

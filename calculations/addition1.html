@@ -52,14 +52,18 @@
           <br>  <! --- adds page break --->                                
                                  
             <script> //starts javascript code
-              input.addEventListener("keypress", function(event) 
-      {
-        if (event.key === "Enter") 
-        {
-          event.preventDefault();
-          document.getElementById("submit").click();
-        }
-      });                                                 
+                                                             
+              .addEventListener("keyup", function(e) 
+              {
+                if (e.code === "Enter") 
+                {
+                  document.getElementById("submit").click();
+                }
+              });       
+              document.getElementById("submit").onclick = function() {
+              acheck ();
+              }
+                                                  
               function check() //function (method) to check if correct, change the question, and only runs 10 questions
               {//start method                 
                  var input = document.getElementById("quantity").value; //sets r to value inputed by user  

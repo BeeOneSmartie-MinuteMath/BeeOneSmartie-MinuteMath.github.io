@@ -109,7 +109,7 @@ body {/*set background colour*/
   text-align: center;
   color: #000;
   right: 550px;
-  bottom: 120px;
+  bottom: 130px;
 }
 
 .bubble-bottom-left:before {/*sets attributes for triangle attached to speech bubble*/

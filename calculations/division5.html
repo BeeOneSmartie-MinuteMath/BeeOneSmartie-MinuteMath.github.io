@@ -48,7 +48,18 @@
          <input type="number" id="quantity" name="quantity" min="0" max="100000" >
         <button id="submit" onclick="ace ()" class="button" >Submit</button>              
          
-         
+      <script> //starts javascript code
+              var input1 = document.getElementById("quantity");                                                                                           
+              input1.addEventListener("keypress", function(event) 
+              {
+                if (event.key === "Enter") 
+                {
+                  event.preventDefault()                   
+                  document.getElementById("submit").click();                                 
+                }
+              });       
+          </script>                                        
+            
        </div>
           <br>                                  
                                  

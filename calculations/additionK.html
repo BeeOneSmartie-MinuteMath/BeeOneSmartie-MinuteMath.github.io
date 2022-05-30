@@ -79,7 +79,8 @@
                      {//start else
                        feedback.textContent = "WRONG"//print feedback to back as wrong
                      } //end else
-                   $('#admin-package-add-form')[0].reset();
+                   var form = document.getElementById("quantity");
+                   form.target.reset();
               }//ends method                      
              </script>                                
     </section>

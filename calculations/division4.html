@@ -34,25 +34,25 @@
       <script>
             var x = (Math.floor(Math.random() * 9))+1;//random numbers
             var y = x*(Math.floor(Math.random() * 9)+1);
-            var a = y / x;
+            var a = y / x; //answer is equal to y divided by x
             var count=0;//counts # of correct answers                                               
-            question.textContent ="What is the answer to: " + y + " ÷ " + x + "?"                             
+            question.textContent ="What is the answer to: " + y + " ÷ " + x + "?" //prints to screen                            
       </script> 
       </div>
         <br>
        <br> 
         
         <div class="rectangle3">
-       <form id="form">
+       <form id="form"> <! --- form to get and submit user input --->
          <label id="label" for="quantity">Please type your Answer:</label> <! --- Creates a label with an id to print text in div --->
          <input type="number" id="quantity" name="quantity" min="0" max="100000" > <! --- able to get input from user that is a number with the specified restrictions --->
         <button id="submit" type="reset" onclick="check ()" class="button" >Submit</button> <! --- creates a button with class from css and calls function check when clicked --->             
-                                                                          </form>    
+                                                                          </form> <! --- submit button type reset will clear input fields after submitting --->
          <script> //starts javascript code
-              var input1 = document.getElementById("quantity");                                                                                           
-              input1.addEventListener("keypress", function(event) 
+              var input1 = document.getElementById("quantity");  //gets and stores user input                                                                                         
+              input1.addEventListener("keypress", function(event) //add a listener
               {
-                if (event.key === "Enter") 
+                if (event.key === "Enter") //will allow pressing enter to do the same thing as clicking submit
                 {
                   event.preventDefault()                   
                   document.getElementById("submit").click();                                 
@@ -64,23 +64,21 @@
           <br>                                  
                                  
             <script> 
-              function ace()
+              function ace()//method that will be called when submit is pressed to check anwer
               {                 
                  var r = document.getElementById("quantity").value;//answer input variable
                    if (a==r)
                    {//if answer == answer input, display correct, add one to the count, and if the count is still less than 10 generate a new question, otherwise congratulate them
                       feedback.textContent = "CORRECT"
                       count=count+1;  
-                      if (count<10)
-                          {
-                             
+                      if (count<10)//if not all 10 questions are completed
+                          {//gives user another question
                                x = (Math.floor(Math.random() * 9))+1;
                                y = x*(Math.floor(Math.random() * 9)+1);
-                             
-                             a = y / x;                                              
-                             question.textContent ="What is the answer to: " + y + " ÷ " + x + "?"                                     
+                               a = y / x;                                              
+                               question.textContent ="What is the answer to: " + y + " ÷ " + x + "?"                                     
                            }                                         
-                      else if (count==10)
+                      else if (count==10)//if 10 questions are completed, show the time and hide input field
                         {                                                           
                         stoptime=true;
                         question.textContent ="Congrats! You solved 10 questions. Your time is " +hr + ":" + min + ":" + sec +". Please screen shot this page and email it to beeonesmartiemath@gmail.com"

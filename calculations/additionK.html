@@ -46,6 +46,17 @@
          <input type="number" id="quantity" name="quantity" min="0" max="100000"> <! --- able to get input from user that is a number with the specified restrictions --->
         <button id="submit" onclick="check ()" class="button" >Submit</button> <! --- creates a button with class from css and calls function check when clicked --->             
          
+         <script> //starts javascript code
+              var input1 = document.getElementById("quantity");                                                                                           
+              input1.addEventListener("keypress", function(event) 
+              {
+                if (event.key === "Enter") 
+                {
+                  event.preventDefault()                   
+                  document.getElementById("submit").click();                                 
+                }
+              });       
+          </script>                                        
          
        </div> <! ---  end div--->
           <br>  <! --- adds page break --->                                

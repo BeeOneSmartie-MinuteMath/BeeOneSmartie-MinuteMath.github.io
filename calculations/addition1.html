@@ -74,11 +74,11 @@
                       count=count+1;//set count equal to count + 1
                       if (count<10)//if count is less than 10 
                           {//start if   
-                             document.getElementById("quantity").reset();                         
                              x = Math.floor(Math.random() * 11); //first num is equal to a random num from 0 to 10
                              y = Math.floor(Math.random() * 11);//second num is equal to a random num from 0 to 10
                              answer = x + y;//set answer equal to the sum of first and second num
-                             question.textContent ="What is the answer to: " + y + " + " + x + " ?" //prints to page                                    
+                             question.textContent ="What is the answer to: " + y + " + " + x + " ?" //prints to page    
+                             document.getElementById("quantity").reset();                                                                      
                            }//end if                                         
                       else if (count==10)//if count is equal to 10 (10 questions have been answered correctly) had to had IF
                         {//start else if                                                           
